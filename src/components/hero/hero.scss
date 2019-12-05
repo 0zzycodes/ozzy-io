@@ -1,0 +1,26 @@
+.hero {
+    position: relative;
+    height: calc(90vh - 100px);
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+
+    .hero-image {
+        width: 50vh;
+        position: absolute;
+        top: -40px;
+        right: -100px;
+        transform: rotate(105deg);
+    }
+
+    .intro {
+        margin-bottom: 30px;
+        color: #000000af;
+
+        span {
+            color: black;
+        }
+    }
+}
+
+// #99b898 #2a363b

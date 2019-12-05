@@ -1,0 +1,29 @@
+.header {
+  background-color: #fafafa;
+  height: 100vh;
+
+  .navbar {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo {
+      height: 40px;
+    }
+
+    .options {
+      width: 50%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+
+      .option {
+        padding: 0px 15px;
+        cursor: pointer;
+
+      }
+    }
+  }
+}
