@@ -1,27 +1,57 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-// import logo from '../../assets/logo.png';
+import logo from '../../assets/logo.png';
+import menuButton from '../../assets/menuButton.svg';
+import close from '../../assets/close.svg';
 // import logoLight from '../../assets/logoLight.png';
-import logoDark from '../../assets/logoDark.png';
+// import logoDark from '../../assets/logoDark.png';
 import './header.scss';
 import Hero from '../hero/hero';
 const Header = () => {
+  const [isShow, setisShow] = useState(false);
+  const toggleMenu = () => {
+    setisShow(!isShow);
+  };
   return (
     <header className="header">
-      <nav className="navbar container">
-        <Link to="/">
-          <img src={logoDark} alt="LOGO" className="logo" />
-        </Link>
-        <div className="options">
-          <Link to="/shop" className="option">
-            ABOUT
-          </Link>
-          <Link to="/gallery" className="option">
-            PORTFOLIO
-          </Link>
-          <Link to="/training" className="option">
-            CONTACT
-          </Link>
+      <nav className="navbar">
+        <div className="nav-links container">
+          <div className="show">
+            <div className="brand">
+              <Link to="/">
+                <img src={logo} alt="LOGO" className="logo-icon" />
+              </Link>
+              <h5>OZZY</h5>
+            </div>
+
+            <img
+              src={isShow ? close : menuButton}
+              className="menu-button"
+              alt="Menu Icon"
+              onClick={toggleMenu}
+            />
+          </div>
+          <div className="options">
+            {isShow ? (
+              <div className="links">
+                <Link to="#about" className="option">
+                  ABOUT
+                </Link>
+                <br />
+                <Link to="#service" className="option">
+                  SERVICE
+                </Link>
+                <br />
+                <Link to="#work" className="option">
+                  PORTFOLIO
+                </Link>
+                <br />
+                <Link to="#contact" className="option">
+                  CONTACT
+                </Link>
+              </div>
+            ) : null}
+          </div>
         </div>
       </nav>
       <Hero />

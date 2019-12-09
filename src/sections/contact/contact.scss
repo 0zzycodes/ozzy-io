@@ -1,0 +1,92 @@
+$sub-color: #f4f4fd;
+$main-color: #f4f4fd;
+
+@mixin shrinkLabel {
+    top: -18px;
+    font-size: 13px;
+    color: $main-color;
+}
+
+.contact-section {
+    color: #f4f4fd;
+
+    .contact {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+        grid-gap: 50px;
+        margin: auto;
+        margin-bottom: 100px;
+
+        form {
+            padding: 20px;
+            background-color: #0e0e0e;
+            text-align: center;
+
+            img {
+                margin-left: 10px;
+                height: 20px;
+            }
+
+            .text-area {
+                position: relative;
+
+                textarea {
+                    background: none;
+                    background-color: transparent;
+                    font-size: 18px;
+                    padding: 10px 10px 10px 5px;
+                    display: block;
+                    width: 90%;
+                    border: none;
+                    border-radius: 0;
+                    border-bottom: 2px solid $sub-color;
+                    margin: 25px 0;
+                    color: $sub-color;
+
+                    &:focus {
+                        outline: none;
+                    }
+
+                    &:focus~.form-input-label {
+                        @include shrinkLabel();
+                    }
+                }
+
+                .form-input-label {
+                    color: $sub-color;
+                    font-size: 17px;
+                    font-weight: normal;
+                    position: absolute;
+                    pointer-events: none;
+                    left: 5px;
+                    top: 10px;
+                    transition: 300ms ease all;
+
+                    &.shrink {
+                        @include shrinkLabel();
+                    }
+                }
+            }
+
+        }
+
+        .contact-info {
+            padding: 20px;
+
+            .info {
+                li {
+                    list-style: none;
+                    padding: 10px 0;
+                }
+
+                .key-title {
+                    font-size: large;
+                }
+
+                .val {
+                    color: #f4f4fdaf;
+                }
+            }
+        }
+    }
+}

@@ -1,48 +1,45 @@
 import React from 'react';
+import logo from '../../assets/logo.png';
 import instagram from '../../assets/instagram.svg';
 import facebook from '../../assets/facebook.svg';
 import twitter from '../../assets/twitter.svg';
-import whatsapp from '../../assets/whatsapp.svg';
-import email from '../../assets/email.svg';
+import linkedin from '../../assets/linkedin.svg';
+import github from '../../assets/github.svg';
 import './footer.scss';
 const Footer = () => {
   return (
     <footer className="footer">
       <div>
         <h4>
-          <b>EXCLUSEAMS</b>
+          <img src={logo} alt="LOGO" />
         </h4>
-        <p className="copyright">Excluseams @ 2019. All rights reserved.</p>
         <a href="https://facebook.com">
-          <img src={facebook} alt="Facebook Logo" />
+          <div className="logo-border">
+            <img src={github} alt="Facebook Logo" />
+          </div>
+        </a>
+        <a href="https://facebook.com">
+          <div className="logo-border">
+            <img src={linkedin} alt="Facebook Logo" />
+          </div>
+        </a>
+        <a href="https://facebook.com">
+          <div className="logo-border">
+            <img src={facebook} alt="Facebook Logo" />
+          </div>
         </a>
         <a href="https://twitter.com">
-          <img src={twitter} alt="Twitter Logo" />
+          <div className="logo-border">
+            <img src={twitter} alt="Twitter Logo" />
+          </div>
         </a>
         <a href="https://instagram.com">
-          <img src={instagram} alt="Instagram Logo" />
-        </a>
-        <a href="https://whatsapp.com">
-          <img src={whatsapp} alt="Whatsapp Logo" />
+          <div className="logo-border">
+            <img src={instagram} alt="Instagram Logo" />
+          </div>
         </a>
       </div>
-      <div>
-        <h4>
-          <b>SUBSCRIBE</b>
-        </h4>
-        <form>
-          <input
-            type="email"
-            name="email"
-            className="email-input"
-            placeholder="Enter email"
-            required
-          />
-          <button className="submit-btn" type="submit">
-            <img src={email} alt="Email Logo" />
-          </button>
-        </form>
-      </div>
+      <p className="copyright">Copyright ©2019 All rights reserved | Ozzy.io</p>
     </footer>
   );
 };

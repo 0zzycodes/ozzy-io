@@ -1,24 +1,62 @@
+$smallScreen : 800px;
+
 .hero {
-    position: relative;
-    height: calc(90vh - 100px);
+    height: 100vh;
     display: flex;
     align-items: center;
     overflow: hidden;
 
-    .hero-image {
-        width: 50vh;
+    .clipy {
+        width: 40vh;
+        height: 40vh;
         position: absolute;
-        top: -40px;
-        right: -100px;
-        transform: rotate(105deg);
+        z-index: 0;
+        bottom: 0px;
+        right: 0px;
+        // clip-path: circle(99.8% at 100% 0);
+        // clip-path: polygon(0% 0%, 0% 100%, 25% 100%, 25% 25%, 75% 25%, 75% 75%, 25% 75%, 25% 100%, 100% 100%, 100% 0%);
+        // clip-path: polygon(68% 14%, 20% 41%, 62% 75%);
+        // background-image: linear-gradient(to right top, #111cf6, #1d30d1, #2e39ab, #393d84, #3f3f5c);
+        transition: all 1s;
     }
 
-    .intro {
-        margin-bottom: 30px;
-        color: #000000af;
+    .content {
 
-        span {
-            color: black;
+        .intro {
+            color: #f4f4fd;
+            font-size: 35px;
+            font-weight: 100;
+
+            .name {
+                background: -webkit-linear-gradient(#111cf6, #1d30d1, #2e39ab, #393d84, #3f3f5c);
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+
+        }
+
+        p {
+            margin-bottom: 25px;
+        }
+    }
+}
+
+
+@media screen and (max-width: $smallScreen) {
+    .hero {
+
+        .clipy {
+            width: 30vh;
+            height: 30vh;
+        }
+
+        .content {
+
+            .intro {
+                color: #f4f4fd;
+                font-size: 20px;
+                font-weight: 100;
+            }
         }
     }
 }

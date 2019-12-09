@@ -1,0 +1,72 @@
+$smallScreen : 800px;
+
+.about {
+    color: #f4f4fd;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-gap: 50px;
+    padding-top: 100px;
+
+    .about-title {
+        font-size: 25px;
+        display: inline-block;
+        background: -webkit-linear-gradient(#111cf6, #1d30d1, #2e39ab, #393d84, #3f3f5c);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-bottom: 10px;
+    }
+
+    .about-text {
+
+        p {
+            font-size: medium;
+            color: #f4f4fd;
+            margin-bottom: 30px;
+        }
+
+        img {
+            margin-left: 10px;
+            height: 20px;
+        }
+
+    }
+
+    .stack {
+
+        // width: 40%;
+        .res {
+            padding: 10px 0;
+
+            ul {
+                padding-left: 30px;
+
+                li {
+                    padding: 5px 0 5px;
+                    background: -webkit-linear-gradient(#111cf6, #1d30d1, #2e39ab, #393d84, #3f3f5c);
+                    background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+            }
+        }
+
+
+    }
+
+}
+
+// @media screen and (max-width: 800px) {
+//     .about {
+//         flex-direction: column;
+
+//         .about-text {
+//             width: 100%;
+//             padding: 0px;
+//             margin: 0px;
+//         }
+
+//         .skills {
+//             width: 100%;
+//         }
+//     }
+
+// }
