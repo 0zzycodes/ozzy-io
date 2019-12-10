@@ -1,6 +1,6 @@
 .footer {
     background-color: #f4f4fd;
-    padding: 20px 0;
+    padding: 20px 0 30px 0;
     text-align: center;
     color: #020202;
 
@@ -16,8 +16,35 @@
         width: 20px;
         height: 20px;
 
+        &:hover {
+            background: -webkit-linear-gradient(#111cf6, #1d30d1, #2e39ab, #393d84, #3f3f5c);
+        }
+
         img {
             width: 20px;
+
         }
     }
+
+    p {
+        color: #020202;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .footer {
+        img {
+            width: 50px;
+        }
+
+        .logo-border {
+            width: 15px;
+            height: 15px;
+
+            img {
+                width: 15px;
+            }
+        }
+    }
+
 }

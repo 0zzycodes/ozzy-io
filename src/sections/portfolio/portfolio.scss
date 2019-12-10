@@ -29,3 +29,20 @@
         }
     }
 }
+
+@media screen and (max-width: 600px) {
+    .portfolio {
+
+        .infos {
+            .info-container {
+
+                .info {
+
+                    img {
+                        height: 30px;
+                    }
+                }
+            }
+        }
+    }
+}

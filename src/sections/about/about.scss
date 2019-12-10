@@ -1,5 +1,3 @@
-$smallScreen : 800px;
-
 .about {
     color: #f4f4fd;
     display: grid;
@@ -8,7 +6,7 @@ $smallScreen : 800px;
     padding-top: 100px;
 
     .about-title {
-        font-size: 25px;
+        font-size: 26px;
         display: inline-block;
         background: -webkit-linear-gradient(#111cf6, #1d30d1, #2e39ab, #393d84, #3f3f5c);
         background-clip: text;
@@ -19,8 +17,6 @@ $smallScreen : 800px;
     .about-text {
 
         p {
-            font-size: medium;
-            color: #f4f4fd;
             margin-bottom: 30px;
         }
 
@@ -33,7 +29,6 @@ $smallScreen : 800px;
 
     .stack {
 
-        // width: 40%;
         .res {
             padding: 10px 0;
 
@@ -54,19 +49,9 @@ $smallScreen : 800px;
 
 }
 
-// @media screen and (max-width: 800px) {
-//     .about {
-//         flex-direction: column;
+@media screen and (max-width: 600px) {
+    .about {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
 
-//         .about-text {
-//             width: 100%;
-//             padding: 0px;
-//             margin: 0px;
-//         }
-
-//         .skills {
-//             width: 100%;
-//         }
-//     }
-
-// }
+}

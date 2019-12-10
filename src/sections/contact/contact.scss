@@ -7,20 +7,26 @@ $main-color: #f4f4fd;
     color: $main-color;
 }
 
+.contain {
+    display: flex;
+    padding: 0 40px;
+}
+
 .contact-section {
     color: #f4f4fd;
+    margin: auto;
+    padding-left: 100px;
 
     .contact {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
         grid-gap: 50px;
-        margin: auto;
         margin-bottom: 100px;
 
         form {
             padding: 20px;
             background-color: #0e0e0e;
-            text-align: center;
+            min-width: 350px;
 
             img {
                 margin-left: 10px;
@@ -29,6 +35,10 @@ $main-color: #f4f4fd;
 
             .text-area {
                 position: relative;
+
+                .expand {
+                    height: 100px;
+                }
 
                 textarea {
                     background: none;
@@ -42,9 +52,11 @@ $main-color: #f4f4fd;
                     border-bottom: 2px solid $sub-color;
                     margin: 25px 0;
                     color: $sub-color;
+                    transition: all .5s;
 
                     &:focus {
                         outline: none;
+                        height: 100px;
                     }
 
                     &:focus~.form-input-label {
@@ -86,6 +98,22 @@ $main-color: #f4f4fd;
                 .val {
                     color: #f4f4fdaf;
                 }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .contain {
+        display: block;
+        padding: 0;
+
+        .contact-section {
+            padding-left: 0px;
+
+            .contact-info {
+                padding: 20px;
+                // padding: 0;
             }
         }
     }

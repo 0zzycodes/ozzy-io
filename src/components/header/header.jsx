@@ -21,7 +21,7 @@ const Header = () => {
               <Link to="/">
                 <img src={logo} alt="LOGO" className="logo-icon" />
               </Link>
-              <h5>OZZY</h5>
+              {/* <h5>OZZY</h5> */}
             </div>
 
             <img
