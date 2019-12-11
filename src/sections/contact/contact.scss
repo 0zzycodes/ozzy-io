@@ -20,13 +20,13 @@ $main-color: #f4f4fd;
     .contact {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-        grid-gap: 50px;
+        // grid-gap: 50px;
         margin-bottom: 100px;
 
         form {
             padding: 20px;
+            // flex: 1;
             background-color: #0e0e0e;
-            min-width: 350px;
 
             img {
                 margin-left: 10px;
@@ -46,7 +46,7 @@ $main-color: #f4f4fd;
                     font-size: 18px;
                     padding: 10px 10px 10px 5px;
                     display: block;
-                    width: 90%;
+                    width: 80%;
                     border: none;
                     border-radius: 0;
                     border-bottom: 2px solid $sub-color;
@@ -84,6 +84,7 @@ $main-color: #f4f4fd;
 
         .contact-info {
             padding: 20px;
+            flex: 4;
 
             .info {
                 li {
@@ -110,6 +111,11 @@ $main-color: #f4f4fd;
 
         .contact-section {
             padding-left: 0px;
+
+            .contact {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            }
 
             .contact-info {
                 padding: 20px;
