@@ -1,23 +1,32 @@
 $smallScreen : 800px;
 
 .hero {
-    height: 100vh;
+    height: 100%;
     display: flex;
     align-items: center;
     overflow: hidden;
+    position: relative;
 
     .clipy {
-        width: 40vh;
-        height: 40vh;
+        width: 60vh;
+        height: 60vh;
         position: absolute;
         z-index: 0;
         bottom: 0px;
-        right: 0px;
-        // clip-path: circle(99.8% at 100% 0);
-        // clip-path: polygon(0% 0%, 0% 100%, 25% 100%, 25% 25%, 75% 25%, 75% 75%, 25% 75%, 25% 100%, 100% 100%, 100% 0%);
-        // clip-path: polygon(68% 14%, 20% 41%, 62% 75%);
-        // background-image: linear-gradient(to right top, #111cf6, #1d30d1, #2e39ab, #393d84, #3f3f5c);
+        right: -100px;
+        // transform: rotate(-50deg);
         transition: all 1s;
+    }
+
+    .posis {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        z-index: 5;
+        display: flex;
+        align-items: center;
     }
 
     .content {

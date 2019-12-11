@@ -2,7 +2,9 @@ import React from 'react';
 import completed from '../../assets/completed.svg';
 import happy from '../../assets/happy.svg';
 import codeLine from '../../assets/codeLine.svg';
+import p1 from '../../assets/p1.jpg';
 import './portfolio.scss';
+import ProjectPreview from '../../components/project-preview/project-preview';
 const Portfolio = () => {
   return (
     <div className="portfolio" id="work">
@@ -13,11 +15,11 @@ const Portfolio = () => {
           Here are some of my latest work
         </span>
       </h2>
-      <div className="section-content container">
-        <div className="box">
-          <h4 className="title">Portfolio</h4>
-          <p>each project goes here</p>
-        </div>
+      <div className="section-content project-list container">
+        <ProjectPreview image={p1} stack={['HTML5', 'CSS3', 'JAVASCRIPT']} />
+        <ProjectPreview image={p1} stack={['HTML5', 'CSS3', 'JAVASCRIPT']} />
+        <ProjectPreview image={p1} stack={['HTML5', 'CSS3', 'JAVASCRIPT']} />
+        <ProjectPreview image={p1} stack={['HTML5', 'CSS3', 'JAVASCRIPT']} />
       </div>
       <div className="infos">
         <div className="info-container container">

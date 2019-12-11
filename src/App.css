@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Lora|Montserrat:600&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Monoton|Lora|Montserrat:600&display=swap');
 h1,
 h2,
 h3,
@@ -69,7 +69,7 @@ a {
 }
 
 .container {
-  width: 80%;
+  width: 80vw;
   margin: auto;
 }
 .heading {
@@ -111,4 +111,67 @@ a {
 }
 .section-content {
   margin-bottom: 100px;
+}
+
+@keyframes animationFrames {
+  0% {
+    opacity: 0;
+    transform: translate(-1500px, 0px);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translate(30px, 0px);
+  }
+
+  80% {
+    transform: translate(-10px, 0px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0px, 0px);
+  }
+}
+
+@-moz-keyframes animationFrames {
+  0% {
+    opacity: 0;
+    -moz-transform: translate(-1500px, 0px);
+  }
+
+  60% {
+    opacity: 1;
+    -moz-transform: translate(30px, 0px);
+  }
+
+  80% {
+    -moz-transform: translate(-10px, 0px);
+  }
+
+  100% {
+    opacity: 1;
+    -moz-transform: translate(0px, 0px);
+  }
+}
+
+@-webkit-keyframes animationFrames {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(-1500px, 0px);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translate(30px, 0px);
+  }
+
+  80% {
+    -webkit-transform: translate(-10px, 0px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0px, 0px);
+  }
 }

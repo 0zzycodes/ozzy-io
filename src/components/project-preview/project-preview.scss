@@ -1,0 +1,51 @@
+.project-preview {
+  // width: 250px;
+  margin: 10px;
+
+  .head {
+    position: relative;
+
+    &:hover .overlay {
+      opacity: 1;
+    }
+
+    img {
+      width: 100%;
+      cursor: pointer;
+    }
+
+    .overlay {
+      cursor: pointer;
+      opacity: 0;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      display: flex;
+      background: #02020291;
+      transition: all .3s;
+
+      img {
+        margin: auto;
+        width: 40px;
+      }
+    }
+  }
+
+  .bott {
+    text-align: center;
+    background: #f4f4fd;
+    color: #020202;
+    padding: 15px;
+    padding-bottom: 25px;
+
+    span {
+      font-size: 9px;
+      border: 1px solid #020202;
+      margin: 0 2px;
+      padding: 4px 8px;
+      text-transform: capitalize;
+    }
+  }
+}
