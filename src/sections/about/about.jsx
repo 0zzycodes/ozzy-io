@@ -1,6 +1,5 @@
 import React from 'react';
 import './about.scss';
-import Skill from '../../components/skill/skill';
 import download from '../../assets/download.svg';
 import CustomButton from '../../components/custom-button/custom-button';
 const About = () => {

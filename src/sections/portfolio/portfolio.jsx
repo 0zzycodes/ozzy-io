@@ -2,7 +2,10 @@ import React from 'react';
 import completed from '../../assets/completed.svg';
 import happy from '../../assets/happy.svg';
 import codeLine from '../../assets/codeLine.svg';
-import p1 from '../../assets/p1.jpg';
+import p1 from '../../assets/p1.png';
+import p2 from '../../assets/p2.png';
+import p4 from '../../assets/p4.png';
+import p3 from '../../assets/p3.png';
 import './portfolio.scss';
 import ProjectPreview from '../../components/project-preview/project-preview';
 const Portfolio = () => {
@@ -16,9 +19,9 @@ const Portfolio = () => {
         </span>
       </h2>
       <div className="section-content project-list container">
-        <ProjectPreview image={p1} stack={['HTML5', 'CSS3', 'JAVASCRIPT']} />
-        <ProjectPreview image={p1} stack={['HTML5', 'CSS3', 'JAVASCRIPT']} />
-        <ProjectPreview image={p1} stack={['HTML5', 'CSS3', 'JAVASCRIPT']} />
+        <ProjectPreview image={p4} stack={['HTML5', 'CSS3', 'JAVASCRIPT']} />
+        <ProjectPreview image={p3} stack={['HTML5', 'CSS3', 'JAVASCRIPT']} />
+        <ProjectPreview image={p2} stack={['HTML5', 'CSS3', 'JAVASCRIPT']} />
         <ProjectPreview image={p1} stack={['HTML5', 'CSS3', 'JAVASCRIPT']} />
       </div>
       <div className="infos">

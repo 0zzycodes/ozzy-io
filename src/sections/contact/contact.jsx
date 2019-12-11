@@ -87,7 +87,8 @@ export default class Contact extends React.Component {
                     <br />
                     <br />
                     <span className="val">
-                      226 ifedapo st, Owode Academy, Ibadan, Oyo State, Nigeria
+                      226 ifedapo st, Owode Academy,
+                      <br /> Ibadan, Oyo State, <br /> Nigeria
                     </span>
                   </li>
                   <li className="">

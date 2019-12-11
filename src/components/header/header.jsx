@@ -3,8 +3,6 @@ import { Link } from 'react-router-dom';
 import logo from '../../assets/logo.png';
 import menuButton from '../../assets/menuButton.svg';
 import close from '../../assets/close.svg';
-// import logoLight from '../../assets/logoLight.png';
-// import logoDark from '../../assets/logoDark.png';
 import './header.scss';
 import Hero from '../hero/hero';
 const Header = () => {

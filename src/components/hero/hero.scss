@@ -8,13 +8,13 @@ $smallScreen : 800px;
     position: relative;
 
     .clipy {
-        width: 60vh;
-        height: 60vh;
+        width: 70vh;
+        height: 70vh;
         position: absolute;
         z-index: 0;
         bottom: 0px;
         right: -100px;
-        // transform: rotate(-50deg);
+        transform: rotate(-15deg);
         transition: all 1s;
     }
 
@@ -27,7 +27,9 @@ $smallScreen : 800px;
         z-index: 5;
         display: flex;
         align-items: center;
+        background-color: #0202028f;
     }
+
 
     .content {
 
