@@ -1,4 +1,6 @@
 $smallScreen : 800px;
+$primaryColor: #f4f4fd;
+$secondaryColor: #1b1b1b;
 
 .hero {
     height: 100%;
@@ -6,14 +8,15 @@ $smallScreen : 800px;
     align-items: center;
     overflow: hidden;
     position: relative;
+    background: transparent;
 
     .clipy {
         width: 70vh;
         height: 70vh;
         position: absolute;
         z-index: 0;
-        bottom: 0px;
-        right: -100px;
+        bottom: -50px;
+        right: -50px;
         transform: rotate(-15deg);
         transition: all 1s;
     }
@@ -27,19 +30,18 @@ $smallScreen : 800px;
         z-index: 5;
         display: flex;
         align-items: center;
-        background-color: #0202028f;
     }
 
 
     .content {
 
         .intro {
-            color: #f4f4fd;
+            color: $secondaryColor;
             font-size: 35px;
             font-weight: 100;
 
             .name {
-                background: -webkit-linear-gradient(#111cf6, #1d30d1, #2e39ab, #393d84, #3f3f5c);
+                background: linear-gradient(#006eff, #0f5abd, #164685, #003375, #37504f);
                 background-clip: text;
                 -webkit-text-fill-color: transparent;
             }
@@ -57,14 +59,14 @@ $smallScreen : 800px;
     .hero {
 
         .clipy {
-            width: 30vh;
-            height: 30vh;
+            width: 50vh;
+            height: 50vh;
         }
 
         .content {
 
             .intro {
-                color: #f4f4fd;
+                color: $secondaryColor;
                 font-size: 20px;
                 font-weight: 100;
             }

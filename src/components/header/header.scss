@@ -1,8 +1,11 @@
+$smallScreen : 800px;
+$primaryColor: #f4f4fd;
+$secondaryColor: #1b1b1b;
+
 .header {
   position: relative;
-  background-color: #020202;
-  height: 90vh;
-
+  height: 100vh;
+  background-color: $primaryColor;
 
 
   .navbar {
@@ -10,14 +13,14 @@
     top: 0;
     right: 0;
     left: 0;
-    background-color: #020202e8;
+    background-color: $primaryColor;
     z-index: 6;
-    padding: 30px 0;
+    padding: 20px 0;
     transition: all 1s;
 
     .brand {
       a {
-        color: #f4f4fd;
+        color: $secondaryColor;
         margin-right: 2px;
         font-family: 'Monoton', cursive;
         display: flex;
@@ -58,18 +61,40 @@
     }
 
     .options {
-      width: 50%;
-      height: 100%;
+      width: 100%;
       text-align: center;
 
-      a {
-        color: #f4f4fd;
+      .links {
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+      }
+
+      .logo-border {
+        padding: 10px;
+        border: 2px solid $secondaryColor;
+        border-color: linear-gradient(#006eff, #0f5abd, #5825ff, #45a29e, #37504f);
+        border-radius: 50%;
+        margin: 10px;
+        width: 20px;
+        height: 20px;
 
         &:hover {
-          background: -webkit-linear-gradient(#111cf6, #1d30d1, #2e39ab, #393d84, #3f3f5c);
-          background-clip: text;
-          -webkit-text-fill-color: transparent;
+          background: lighten($color: $primaryColor, $amount: 10);
         }
+
+        img {
+          width: 20px;
+
+        }
+      }
+
+      a {
+        color: $secondaryColor;
+
+
       }
 
       .option {
@@ -101,6 +126,11 @@
         -ms-transform-origin: 50% 50%;
         -ms-animation-fill-mode: forwards;
 
+        &:hover {
+          background: #006eff;
+          color: $primaryColor;
+        }
+
         /*IE 10+*/
         &:nth-child(3) {
           animation-delay: .1s;
@@ -110,8 +140,12 @@
           animation-delay: .2s;
         }
 
-        &:last-child {
+        &:nth-child(7) {
           animation-delay: .3s;
+        }
+
+        &:last-child {
+          animation-delay: .4s;
         }
 
 

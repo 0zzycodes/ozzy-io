@@ -26,27 +26,29 @@ const About = () => {
       <div className="stack">
         <h3 className="about-title">Tech Stack</h3>
         <p>Here are all the resources I used</p>
-        <div className="res">
-          <h4>Frameworks & Libraries</h4>
-          <ul>
-            <li>React.js</li>
-            <li>Node.js</li>
-          </ul>
-        </div>
-        <div className="res">
-          <h4>Deployment & Hosting</h4>
-          <ul>
-            <li>Github Pages</li>
-            <li>Netlify</li>
-            <li>Heroku</li>
-          </ul>
-        </div>
-        <div className="res">
-          <h4>Web Performance & Security</h4>
-          <ul>
-            <li>Lighthouse Chrome DevTools</li>
-            <li>Google Analytics</li>
-          </ul>
+        <div className="flex-item">
+          <div className="res">
+            <h4>Frameworks & Libraries</h4>
+            <ul>
+              <li>React.js</li>
+              <li>Node.js</li>
+            </ul>
+          </div>
+          <div className="res">
+            <h4>Deployment & Hosting</h4>
+            <ul>
+              <li>Github Pages</li>
+              <li>Netlify</li>
+              <li>Heroku</li>
+            </ul>
+          </div>
+          <div className="res">
+            <h4>Web Performance & Security</h4>
+            <ul>
+              <li>Lighthouse Chrome DevTools</li>
+              <li>Google Analytics</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>

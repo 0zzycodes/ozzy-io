@@ -87,13 +87,7 @@ a {
   content: '';
   width: 50px;
   height: 2px;
-  background: -webkit-linear-gradient(
-    #111cf6,
-    #1d30d1,
-    #2e39ab,
-    #393d84,
-    #3f3f5c
-  );
+  background: linear-gradient(#006eff, #0f5abd, #164685, #003375, #37504f);
   left: 50%;
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
