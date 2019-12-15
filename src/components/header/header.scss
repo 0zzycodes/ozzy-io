@@ -153,3 +153,9 @@ $secondaryColor: #1b1b1b;
     }
   }
 }
+
+@media screen and (max-width: $smallScreen) {
+  .header {
+    height: 80vh;
+  }
+}

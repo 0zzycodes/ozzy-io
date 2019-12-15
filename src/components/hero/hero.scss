@@ -15,8 +15,8 @@ $secondaryColor: #1b1b1b;
         height: 70vh;
         position: absolute;
         z-index: 0;
-        bottom: -50px;
-        right: -50px;
+        bottom: -35px;
+        right: -40px;
         transform: rotate(-15deg);
         transition: all 1s;
     }
@@ -50,6 +50,7 @@ $secondaryColor: #1b1b1b;
 
         p {
             margin-bottom: 25px;
+            color: lighten($color: $secondaryColor, $amount: 10);
         }
     }
 }
@@ -59,8 +60,11 @@ $secondaryColor: #1b1b1b;
     .hero {
 
         .clipy {
-            width: 50vh;
-            height: 50vh;
+            width: 45vh;
+            height: 45vh;
+            bottom: 0px;
+            right: -100px;
+            transform: rotate(0deg);
         }
 
         .content {
