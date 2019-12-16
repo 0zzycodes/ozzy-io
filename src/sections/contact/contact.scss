@@ -11,14 +11,16 @@ $secondaryColor: #1b1b1b;
 }
 
 .contain {
+    width: 80%;
     display: flex;
     padding: 0 40px;
+    margin: auto;
 }
 
 .contact-section {
     color: #f4f4fd;
     margin: auto;
-    padding-left: 100px;
+    // padding-left: 100px;
 
     .contact {
         display: grid;

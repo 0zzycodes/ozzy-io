@@ -13,27 +13,27 @@ const Footer = () => {
         <h4>
           <img src={logo} alt="LOGO" />
         </h4>
-        <a href="https://facebook.com">
+        <a href="https://github.com/0zzycodes">
           <div className="logo-border">
             <img src={github} alt="Facebook Logo" />
           </div>
         </a>
-        <a href="https://facebook.com">
+        <a href="https://www.linkedin.com/in/ibrahim-bello-928531133/">
           <div className="logo-border">
             <img src={linkedin} alt="Facebook Logo" />
           </div>
         </a>
-        <a href="https://facebook.com">
+        <a href="https://web.facebook.com/profile.php?id=100013327810283">
           <div className="logo-border">
             <img src={facebook} alt="Facebook Logo" />
           </div>
         </a>
-        <a href="https://twitter.com">
+        <a href="https://twitter.com/ozzycodes">
           <div className="logo-border">
             <img src={twitter} alt="Twitter Logo" />
           </div>
         </a>
-        <a href="https://instagram.com">
+        <a href="https://www.instagram.com/ozzycodes/">
           <div className="logo-border">
             <img src={instagram} alt="Instagram Logo" />
           </div>

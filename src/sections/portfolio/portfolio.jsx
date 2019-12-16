@@ -19,10 +19,26 @@ const Portfolio = () => {
         </span>
       </h2>
       <div className="section-content project-list container">
-        <ProjectPreview image={p4} stack={['HTML5', 'CSS3', 'JAVASCRIPT']} />
-        <ProjectPreview image={p3} stack={['HTML5', 'CSS3', 'JAVASCRIPT']} />
-        <ProjectPreview image={p2} stack={['HTML5', 'CSS3', 'JAVASCRIPT']} />
-        <ProjectPreview image={p1} stack={['HTML5', 'CSS3', 'JAVASCRIPT']} />
+        <ProjectPreview
+          image={p4}
+          title="Rocket Devs"
+          stack={['HTML5', 'CSS3', 'JAVASCRIPT']}
+        />
+        <ProjectPreview
+          image={p3}
+          title="Home Deco"
+          stack={['HTML5', 'CSS3', 'JAVASCRIPT']}
+        />
+        <ProjectPreview
+          image={p2}
+          title="Perfect Spice"
+          stack={['HTML5', 'CSS3', 'JAVASCRIPT']}
+        />
+        <ProjectPreview
+          image={p1}
+          title="Ozzy Store"
+          stack={['HTML5', 'CSS3', 'JAVASCRIPT']}
+        />
       </div>
       <div className="infos">
         <div className="info-container container">

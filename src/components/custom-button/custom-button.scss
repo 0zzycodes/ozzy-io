@@ -30,6 +30,7 @@ $secondaryColor: #1b1b1b;
     &.inverted {
         background-color: $primaryColor;
         color: $secondaryColor;
+        border: 1px solid $secondaryColor;
         display: flex;
         align-items: baseline;
 

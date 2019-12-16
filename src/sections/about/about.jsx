@@ -26,34 +26,52 @@ const About = () => {
           </CustomButton>
         </div>
         <div className="about-image">
-          <img src={single} alt="About-Image" />
+          <img src={single} alt="About-vector-illustrator" />
         </div>
       </div>
       <div className="stack">
-        <h3 className="about-title">Tech Stack</h3>
-        <p>Here are all the resources I used</p>
         <div className="flex-item">
-          <div className="res">
-            <h4>Frameworks & Libraries</h4>
-            <ul>
-              <li>React.js</li>
-              <li>Node.js</li>
-            </ul>
+          <div>
+            <h3 className="about-title">Tech Stack</h3>
+            <p>Here are all the resources I used</p>
+            <div className="res">
+              <h4>Frameworks & Libraries</h4>
+              <ul>
+                <li>React.js</li>
+                <li>Node.js</li>
+              </ul>
+            </div>
+            <div className="res">
+              <h4>Deployment & Hosting</h4>
+              <ul>
+                <li>Github Pages</li>
+                <li>Netlify</li>
+                <li>Heroku</li>
+              </ul>
+            </div>
+            <div className="res">
+              <h4>Web Performance & Security</h4>
+              <ul>
+                <li>Lighthouse Chrome DevTools</li>
+                <li>Google Analytics</li>
+              </ul>
+            </div>
           </div>
-          <div className="res">
-            <h4>Deployment & Hosting</h4>
-            <ul>
-              <li>Github Pages</li>
-              <li>Netlify</li>
-              <li>Heroku</li>
-            </ul>
-          </div>
-          <div className="res">
-            <h4>Web Performance & Security</h4>
-            <ul>
-              <li>Lighthouse Chrome DevTools</li>
-              <li>Google Analytics</li>
-            </ul>
+          <div className="analysed-stack">
+            <div className="front-end">
+              <h3 className="about-title">Front-End</h3>
+              <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JAVASCRIPT (REACT.JS)</li>
+              </ul>
+            </div>
+            <div className="back-end">
+              <h3 className="about-title">Back-End</h3>
+              <ul>
+                <li>JAVASCRIPT (NODE.JS)</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>

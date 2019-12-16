@@ -1,7 +1,8 @@
 import React from 'react';
 import './project-preview.scss';
 import focus from '../../assets/focus.svg';
-const ProjectPreview = ({ image, stack }) => {
+import CustomButton from '../custom-button/custom-button';
+const ProjectPreview = ({ image, title, stack }) => {
   return (
     <div className="project-preview">
       <div className="head">
@@ -11,10 +12,20 @@ const ProjectPreview = ({ image, stack }) => {
         </div>
       </div>
       <div className="bott">
-        <h5>Title Goes Here</h5>
-        {stack.map(item => (
-          <span key={item}>{item}</span>
-        ))}
+        <h3>{title}</h3>
+        <div className="p-stack">
+          {stack.map(item => (
+            <span key={item}>{item}</span>
+          ))}
+        </div>
+        <div className="button">
+          <a href="#" className="demo">
+            <CustomButton>Demo</CustomButton>
+          </a>
+          <a href="#">
+            <CustomButton showImage={true}>Source</CustomButton>
+          </a>
+        </div>
       </div>
     </div>
   );
