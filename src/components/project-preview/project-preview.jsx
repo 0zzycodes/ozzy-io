@@ -20,10 +20,11 @@ const ProjectPreview = ({ image, title, stack }) => {
         </div>
         <div className="button">
           <a href="#" className="demo">
-            <CustomButton>Demo</CustomButton>
+            Demo
           </a>
-          <a href="#">
-            <CustomButton showImage={true}>Source</CustomButton>
+          <br />
+          <a href="#" className="source">
+            Source
           </a>
         </div>
       </div>
