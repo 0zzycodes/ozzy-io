@@ -9,15 +9,10 @@ const Hero = () => {
       <div className="posis">
         <div className="content">
           <h3 className="intro">
-            HOWDY...
-            <span role="img" aria-label="Wave">
-              👋
-            </span>
-            <br />
-            I'M <span className="name">IBRAHIM</span> <del>a.k.a</del>{' '}
-            <span className="name">OZZY</span>
+            Hi, I'm <span className="name">Ibrahim</span> <del>a.k.a</del>{' '}
+            <span className="name">Ozzy</span>
           </h3>
-          <p>A Self-Taught UI/UX Designer and Front-End Developer. </p>
+          <p>A Self-Taught UI/UX Designer and Full-Stack Developer. </p>
           <CustomButton>SEE MY WORKS</CustomButton>
         </div>
       </div>

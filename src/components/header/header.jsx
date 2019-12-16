@@ -23,7 +23,6 @@ const Header = () => {
             <div className="brand">
               <Link to="/">
                 <img src={logo} alt="LOGO" className="logo-icon" />
-                ZZY
               </Link>
             </div>
 
