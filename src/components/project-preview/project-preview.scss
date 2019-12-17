@@ -2,17 +2,20 @@ $primaryColor: #f4f4fd;
 $secondaryColor: #1b1b1b;
 
 .project-preview {
-  margin: 10px;
-  max-width: 750px;
+  margin: 30px 10px;
   position: relative;
+  display: flex;
+  align-items: center;
 
   &:nth-child(even) {
-    margin-left: auto;
+    flex-direction: row-reverse;
   }
 
 
   .head {
+    max-width: 650px;
     position: relative;
+    padding: 15px;
 
     &:hover .overlay {
       opacity: 1;
@@ -43,45 +46,56 @@ $secondaryColor: #1b1b1b;
   }
 
   .bott {
-    text-align: center;
-    background-color: transparentize($color: #f4f4fd, $amount: .1);
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    color: #020202;
-    margin-top: -4px;
+    align-items: flex-start;
+    color: $primaryColor;
     padding: 15px;
-    padding-bottom: 25px;
-    position: absolute;
-    // overflow: scroll;
-    bottom: 0;
-    top: 0;
-    right: 0;
-    left: 0;
+    width: 100%;
+
+    .project-title {
+      display: inline-block;
+      color: #006eff;
+      border-bottom: 2px solid #006eff;
+      position: relative;
+      margin-bottom: 20px;
+    }
+
+    .project-title:after {
+      position: absolute;
+      content: '';
+      width: 50%;
+      height: 2px;
+      background: #006eff;
+      left: 0;
+      bottom: -7px;
+    }
 
     span {
-      font-size: 9px;
-      border: 1px solid #020202;
-      margin: 0 2px;
-      padding: 4px 8px;
+      font-size: 12px;
+      margin: 10px 16px 10px 0;
+      padding: 4px 0px;
       text-transform: capitalize;
       display: inline-block;
     }
 
     .button {
+      margin-top: auto;
 
       a {
-        min-width: 120px;
+        text-align: center;
+        min-width: 7vw;
         width: auto;
         padding: 0 30px 0 30px;
         font-size: 13px;
         background-color: $secondaryColor;
         color: $primaryColor;
         text-transform: uppercase;
-        border: 1px solid $secondaryColor;
+        border: 1px solid $primaryColor;
         font-weight: bolder;
         line-height: 40px;
         margin: 5px;
+        margin-left: 0;
 
         &:hover {
           background-color: $primaryColor;
@@ -105,8 +119,28 @@ $secondaryColor: #1b1b1b;
   }
 }
 
+@media screen and (max-width: 1100px) {
+  .project-preview {
+    flex-direction: column;
+    // align-items: flex-start;
+
+    &:nth-child(even) {
+      flex-direction: column;
+    }
+
+    .bott {
+      max-width: 650px;
+    }
+  }
+}
+
 @media screen and (max-width: 600px) {
   .project-preview {
+    flex-direction: column;
+
+    &:nth-child(even) {
+      flex-direction: column;
+    }
 
     .bott {
       justify-content: space-between;

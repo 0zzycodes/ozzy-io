@@ -1,28 +1,36 @@
 import React from 'react';
 import './project-preview.scss';
-import focus from '../../assets/focus.svg';
-import CustomButton from '../custom-button/custom-button';
 const ProjectPreview = ({ image, title, stack }) => {
   return (
     <div className="project-preview">
       <div className="head">
         <img src={image} alt="" />
-        <div className="overlay">
+        {/* <div className="overlay">
           <img src={focus} alt="Focus" />
-        </div>
+        </div> */}
       </div>
       <div className="bott">
-        <h3>{title}</h3>
-        <div className="p-stack">
-          {stack.map(item => (
-            <span key={item}>{item}</span>
-          ))}
+        <div>
+          <h3 className="project-title">{title}</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum
+            eum omnis quibusdam, temporibus deserunt ullam provident mollitia
+            maiores repudiandae commodi? Velit tempora minus laboriosam.
+            Reprehenderit ab, fuga optio repellat culpa architecto consequatur
+            repudiandae reiciendis dignissimos sint! Sed ipsa labore, doloribus
+            deleniti incidunt inventore et nobis ducimus iusto asperiores a
+            sunt?
+          </p>
         </div>
         <div className="button">
+          <div className="p-stack">
+            {stack.map(item => (
+              <span key={item}>{item}</span>
+            ))}
+          </div>
           <a href="#" className="demo">
             Demo
           </a>
-          <br />
           <a href="#" className="source">
             Source
           </a>
