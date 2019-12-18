@@ -113,6 +113,7 @@ a {
   bottom: 6px;
   width: 80px;
 }
+
 .section-title {
   line-height: 20px;
   text-align: center;
@@ -120,9 +121,9 @@ a {
 .short-description {
   font-size: small;
 }
-.section-content {
+/* .section-content {
   margin-bottom: 100px;
-}
+} */
 
 @keyframes animationFrames {
   0% {

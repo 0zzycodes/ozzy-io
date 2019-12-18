@@ -6,9 +6,7 @@ $secondaryColor: #1b1b1b;
     color: #f4f4fd;
     display: flex;
     flex-wrap: wrap;
-    // grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    // grid-gap: 50px;
-    padding-top: 50px;
+    padding-top: 100px;
 
     .about-text-image {
         display: flex;
@@ -30,6 +28,10 @@ $secondaryColor: #1b1b1b;
         color: #006eff;
         position: relative;
         padding-bottom: 8px;
+    }
+
+    .spec {
+        padding-bottom: 20px !important;
     }
 
     .about-text {
@@ -67,10 +69,6 @@ $secondaryColor: #1b1b1b;
                     min-height: 130px;
                     padding: 20px;
                     margin: 10px;
-
-                    // h3 {
-                    //     border-bottom: 2px solid #003375;
-                    // }
                 }
 
                 ul {

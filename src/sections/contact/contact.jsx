@@ -27,7 +27,7 @@ export default class Contact extends React.Component {
   render() {
     const { firstName, lastName, email, comment } = this.state;
     return (
-      <div className="contain">
+      <div className="contain" id="contact">
         <div className="contact-section">
           <h2 className="section-title heading">
             DROP A LINE

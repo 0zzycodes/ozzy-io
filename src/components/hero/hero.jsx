@@ -5,11 +5,11 @@ import CustomButton from '../custom-button/custom-button';
 const Hero = () => {
   return (
     <div className="hero container">
-      <img src={duc} alt="HeroImage" className="clipy" />
+      <img src={duc} alt="HeroImage" id="target" className="clipy" />
       <div className="posis">
         <div className="content">
           <h3 className="intro">
-            Hi, I'm <span className="name">Ibrahim</span> <del>a.k.a</del>{' '}
+            Hi, I'm <span className="name">Ibrahim</span> <del>a.k.a</del>
             <span className="name">Ozzy</span>
           </h3>
           <p>A Self-Taught UI/UX Designer and Full-Stack Developer. </p>

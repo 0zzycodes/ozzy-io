@@ -5,9 +5,6 @@ const ProjectPreview = ({ image, title, stack }) => {
     <div className="project-preview">
       <div className="head">
         <img src={image} alt="" />
-        {/* <div className="overlay">
-          <img src={focus} alt="Focus" />
-        </div> */}
       </div>
       <div className="bott">
         <div>
@@ -28,10 +25,10 @@ const ProjectPreview = ({ image, title, stack }) => {
               <span key={item}>{item}</span>
             ))}
           </div>
-          <a href="#" className="demo">
+          <a href="/" className="demo">
             Demo
           </a>
-          <a href="#" className="source">
+          <a href="/" className="source">
             Source
           </a>
         </div>

@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 import logo from '../../assets/logo.png';
 import menuButton from '../../assets/menuButton.svg';
 import close from '../../assets/close.svg';
@@ -8,10 +7,14 @@ import facebook from '../../assets/facebook.svg';
 import twitter from '../../assets/twitter.svg';
 import linkedin from '../../assets/linkedin.svg';
 import github from '../../assets/github.svg';
-import './header.scss';
 import Hero from '../hero/hero';
+import './header.scss';
+
 const Header = () => {
   const [isShow, setisShow] = useState(false);
+  const handleScroll = e => {
+    setisShow(!isShow);
+  };
   const toggleMenu = () => {
     setisShow(!isShow);
   };
@@ -21,9 +24,9 @@ const Header = () => {
         <div className="nav-links container">
           <div className="show">
             <div className="brand">
-              <Link to="/">
+              <a href="/">
                 <img src={logo} alt="LOGO" className="logo-icon" />
-              </Link>
+              </a>
             </div>
 
             <img
@@ -37,21 +40,21 @@ const Header = () => {
             {isShow ? (
               <div className="links">
                 <div className="nav-links-2">
-                  <Link to="#about" className="option">
+                  <a href="#about" onClick={handleScroll} className="option">
                     ABOUT
-                  </Link>
+                  </a>
                   <br />
-                  <Link to="#service" className="option">
+                  <a href="#service" onClick={handleScroll} className="option">
                     SERVICE
-                  </Link>
+                  </a>
                   <br />
-                  <Link to="#work" className="option">
+                  <a href="#work" onClick={handleScroll} className="option">
                     PORTFOLIO
-                  </Link>
+                  </a>
                   <br />
-                  <Link to="#contact" className="option">
+                  <a href="#contact" onClick={handleScroll} className="option">
                     CONTACT
-                  </Link>
+                  </a>
                 </div>
                 <div className="social">
                   <hr />
