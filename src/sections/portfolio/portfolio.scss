@@ -40,9 +40,6 @@
 
 @media screen and (max-width: 600px) {
     .portfolio {
-        .project-list {
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-        }
 
         .infos {
             .info-container {

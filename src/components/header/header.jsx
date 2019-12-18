@@ -32,7 +32,8 @@ const Header = () => {
             <img
               src={isShow ? close : menuButton}
               className="menu-button"
-              alt="Menu Icon"
+              alt="Menu\
+                      `Icon"
               onClick={toggleMenu}
             />
           </div>
