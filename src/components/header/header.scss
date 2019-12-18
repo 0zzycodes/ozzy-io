@@ -59,7 +59,8 @@ $secondaryColor: #1b1b1b;
       text-align: center;
 
       .links {
-        height: 60vh;
+        // height: 10vh;
+        animation: animateHeight ease 3ms forwards;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -144,9 +145,3 @@ $secondaryColor: #1b1b1b;
     }
   }
 }
-
-// @media screen and (max-width: $smallScreen) {
-//   .header {
-//     height: 80vh;
-//   }
-// }

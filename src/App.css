@@ -125,6 +125,14 @@ a {
   margin-bottom: 100px;
 } */
 
+@keyframes animateHeight {
+  from {
+    height: 10vh;
+  }
+  to {
+    height: 60vh;
+  }
+}
 @keyframes animationFrames {
   0% {
     opacity: 0;
