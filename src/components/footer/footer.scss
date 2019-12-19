@@ -1,12 +1,28 @@
-$smallScreen : 800px;
+$smartphone-width: 600px;
 $primaryColor: #f4f4fd;
 $secondaryColor: #1b1b1b;
+
+
+@mixin smartphone {
+    @media (max-width: #{$smartphone-width}) {
+        @content;
+    }
+}
+
 
 .footer {
     background-color: $primaryColor;
     padding: 20px 0 30px 0;
     text-align: center;
     color: $secondaryColor;
+
+    @include smartphone() {
+        .footer {
+            img {
+                width: 70px;
+            }
+        }
+    }
 
     img {
         width: 60px;
@@ -30,25 +46,21 @@ $secondaryColor: #1b1b1b;
         }
     }
 
-    p {
-        color: $secondaryColor;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .footer {
-        img {
-            width: 50px;
-        }
-
+    @include smartphone() {
         .logo-border {
-            width: 15px;
-            height: 15px;
+            width: 10px;
+            height: 10px;
+            display: flex;
 
             img {
-                width: 15px;
+                margin: auto;
+                width: 12px;
             }
         }
     }
 
+
+    p {
+        color: $secondaryColor;
+    }
 }

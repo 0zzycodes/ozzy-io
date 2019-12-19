@@ -1,6 +1,14 @@
-$smallScreen : 800px;
+$smartphone-width: 600px;
+$smallScreen: 800px;
 $primaryColor: #f4f4fd;
 $secondaryColor: #1b1b1b;
+
+
+@mixin smartphone {
+    @media (max-width: #{$smartphone-width}) {
+        @content;
+    }
+}
 
 .hero {
     height: 100%;
@@ -48,9 +56,21 @@ $secondaryColor: #1b1b1b;
 
         }
 
+        // @include smartphone() {
+        //     .intro {
+        //         font-size: 18px;
+        //     }
+        // }
+
         p {
             margin-bottom: 25px;
             color: lighten($color: $secondaryColor, $amount: 10);
+        }
+
+        @include smartphone() {
+            p {
+                font-size: 17px;
+            }
         }
     }
 }
@@ -71,7 +91,7 @@ $secondaryColor: #1b1b1b;
 
             .intro {
                 color: $secondaryColor;
-                font-size: 20px;
+                font-size: 30px;
                 font-weight: 100;
             }
         }

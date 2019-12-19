@@ -35,49 +35,51 @@ export default class Contact extends React.Component {
             <span className="short-description">If You want to collab</span>
           </h2>
           <div className="contact">
-            <form onSubmit={this.handleSubmit}>
-              <h3>SEND A MESSAGE</h3>
-              <FormInput
-                type="text"
-                name="firstName"
-                value={firstName}
-                label="First Name"
-                onChange={this.handleChange}
-              />
-              <FormInput
-                type="text"
-                name="lastName"
-                value={lastName}
-                label="Last Name"
-                onChange={this.handleChange}
-              />
-              <FormInput
-                type="email"
-                name="email"
-                value={email}
-                label="Email"
-                onChange={this.handleChange}
-              />
-              <div className="text-area">
-                <textarea
-                  name="comment"
-                  value={comment}
-                  id=""
+            <div className="form">
+              <form onSubmit={this.handleSubmit}>
+                <h3>SEND A MESSAGE</h3>
+                <FormInput
+                  type="text"
+                  name="firstName"
+                  value={firstName}
+                  label="First Name"
                   onChange={this.handleChange}
-                  className={`${comment.length ? 'expand' : null}`}
-                  cols="100"
-                  rows="1"
-                ></textarea>
-                <label
-                  className={`${
-                    comment.length ? 'shrink' : ''
-                  } form-input-label`}
-                >
-                  Write your message.
-                </label>
-              </div>
-              <CustomButton showImage="showImage">SEND MESSAGE</CustomButton>
-            </form>
+                />
+                <FormInput
+                  type="text"
+                  name="lastName"
+                  value={lastName}
+                  label="Last Name"
+                  onChange={this.handleChange}
+                />
+                <FormInput
+                  type="email"
+                  name="email"
+                  value={email}
+                  label="Email"
+                  onChange={this.handleChange}
+                />
+                <div className="text-area">
+                  <textarea
+                    name="comment"
+                    value={comment}
+                    id=""
+                    onChange={this.handleChange}
+                    className={`${comment.length ? 'expand' : null}`}
+                    cols="100"
+                    rows="1"
+                  ></textarea>
+                  <label
+                    className={`${
+                      comment.length ? 'shrink' : ''
+                    } form-input-label`}
+                  >
+                    Write your message.
+                  </label>
+                </div>
+                <CustomButton showImage="showImage">SEND MESSAGE</CustomButton>
+              </form>
+            </div>
             <div className="contact-info">
               <h3>Contact Info</h3>
               <div className="">

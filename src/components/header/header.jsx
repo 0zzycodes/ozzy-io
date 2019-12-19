@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-scroll';
 import logo from '../../assets/logo.png';
 import menuButton from '../../assets/menuButton.svg';
 import close from '../../assets/close.svg';
@@ -32,8 +33,7 @@ const Header = () => {
             <img
               src={isShow ? close : menuButton}
               className="menu-button"
-              alt="Menu\
-                      `Icon"
+              alt="MenuIcon"
               onClick={toggleMenu}
             />
           </div>
@@ -41,21 +41,53 @@ const Header = () => {
             {isShow ? (
               <div className="links">
                 <div className="nav-links-2">
-                  <a href="#about" onClick={handleScroll} className="option">
+                  <Link
+                    to="about"
+                    spy={true}
+                    smooth={true}
+                    offset={-40}
+                    duration={500}
+                    onClick={handleScroll}
+                    className="option"
+                  >
                     ABOUT
-                  </a>
+                  </Link>
                   <br />
-                  <a href="#service" onClick={handleScroll} className="option">
+                  <Link
+                    to="service"
+                    spy={true}
+                    smooth={true}
+                    offset={-40}
+                    duration={500}
+                    onClick={handleScroll}
+                    className="option"
+                  >
                     SERVICE
-                  </a>
+                  </Link>
                   <br />
-                  <a href="#work" onClick={handleScroll} className="option">
+                  <Link
+                    to="work"
+                    spy={true}
+                    smooth={true}
+                    offset={-40}
+                    duration={500}
+                    onClick={handleScroll}
+                    className="option"
+                  >
                     PORTFOLIO
-                  </a>
+                  </Link>
                   <br />
-                  <a href="#contact" onClick={handleScroll} className="option">
+                  <Link
+                    to="contact"
+                    spy={true}
+                    smooth={true}
+                    offset={-40}
+                    duration={500}
+                    onClick={handleScroll}
+                    className="option"
+                  >
                     CONTACT
-                  </a>
+                  </Link>
                 </div>
                 <div className="social">
                   <hr />

@@ -21,72 +21,77 @@ $secondaryColor: #1b1b1b;
 .contact-section {
     color: #f4f4fd;
     margin: auto;
-    // padding-left: 100px;
 
     .contact {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-        // grid-gap: 50px;
+
         margin-bottom: 100px;
 
-        form {
-            padding: 20px;
-            // flex: 1;
+        .form {
+            display: flex;
+            padding: 20px 35px 20px 20px;
             background-color: lighten($color: $secondaryColor, $amount: 5);
 
-            img {
-                margin-left: 10px;
-                height: 20px;
-            }
+            form {
+                margin: auto;
+                width: 100%;
 
-            .text-area {
-                position: relative;
-
-                .expand {
-                    height: 100px;
+                img {
+                    margin-left: 10px;
+                    height: 20px;
                 }
 
-                textarea {
-                    background: none;
-                    background-color: transparent;
-                    font-size: 18px;
-                    padding: 10px 10px 10px 5px;
-                    display: block;
-                    width: 80%;
-                    border: none;
-                    border-radius: 0;
-                    border-bottom: 2px solid $sub-color;
-                    margin: 25px 0;
-                    color: $sub-color;
-                    transition: all .5s;
+                .text-area {
+                    position: relative;
 
-                    &:focus {
-                        outline: none;
+                    .expand {
                         height: 100px;
                     }
 
-                    &:focus~.form-input-label {
-                        @include shrinkLabel();
+                    textarea {
+                        background: none;
+                        background-color: transparent;
+                        font-size: 18px;
+                        padding: 10px 10px 10px 5px;
+                        display: block;
+                        width: 100%;
+                        border: none;
+                        border-radius: 0;
+                        border-bottom: 2px solid $sub-color;
+                        margin: 25px 0;
+                        color: $sub-color;
+                        transition: all .5s;
+
+                        &:focus {
+                            outline: none;
+                            height: 100px;
+                        }
+
+                        &:focus~.form-input-label {
+                            @include shrinkLabel();
+                        }
+                    }
+
+                    .form-input-label {
+                        color: $sub-color;
+                        font-size: 17px;
+                        font-weight: normal;
+                        position: absolute;
+                        pointer-events: none;
+                        left: 5px;
+                        top: 10px;
+                        transition: 300ms ease all;
+
+                        &.shrink {
+                            @include shrinkLabel();
+                        }
                     }
                 }
 
-                .form-input-label {
-                    color: $sub-color;
-                    font-size: 17px;
-                    font-weight: normal;
-                    position: absolute;
-                    pointer-events: none;
-                    left: 5px;
-                    top: 10px;
-                    transition: 300ms ease all;
-
-                    &.shrink {
-                        @include shrinkLabel();
-                    }
-                }
             }
-
         }
+
 
         .contact-info {
             padding: 20px;
@@ -124,7 +129,6 @@ $secondaryColor: #1b1b1b;
 
             .contact-info {
                 padding: 20px;
-                // padding: 0;
             }
         }
     }

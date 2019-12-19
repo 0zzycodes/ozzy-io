@@ -199,4 +199,13 @@ a {
   .container {
     width: 90vw;
   }
+  .logo-border {
+    width: 10px;
+    height: 10px;
+    display: flex;
+  }
+  .logo-border img {
+    margin: auto;
+    width: 12px;
+  }
 }

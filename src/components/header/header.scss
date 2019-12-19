@@ -1,6 +1,13 @@
-$smallScreen : 800px;
+$smartphone-width: 600px;
 $primaryColor: #f4f4fd;
 $secondaryColor: #1b1b1b;
+
+
+@mixin smartphone {
+  @media (max-width: #{$smartphone-width}) {
+    @content;
+  }
+}
 
 .header {
   position: relative;
@@ -80,6 +87,19 @@ $secondaryColor: #1b1b1b;
         img {
           width: 20px;
 
+        }
+      }
+
+      @include smartphone() {
+        .logo-border {
+          width: 10px;
+          height: 10px;
+          display: flex;
+
+          img {
+            margin: auto;
+            width: 12px;
+          }
         }
       }
 

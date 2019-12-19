@@ -6,25 +6,24 @@ import Portfolio from './sections/portfolio/portfolio';
 import './App.css';
 import Footer from './components/footer/footer';
 import Contact from './sections/contact/contact';
-import ScrollableAnchor from 'react-scrollable-anchor';
 
 class App extends React.Component {
   render() {
     return (
       <>
         <Header />
-        <ScrollableAnchor id={'about'}>
+        <div id="about">
           <About />
-        </ScrollableAnchor>
-        <ScrollableAnchor id={'service'}>
+        </div>
+        <div id="service">
           <Service />
-        </ScrollableAnchor>
-        <ScrollableAnchor id={'work'}>
+        </div>
+        <div id="work">
           <Portfolio />
-        </ScrollableAnchor>
-        <ScrollableAnchor id={'contact'}>
+        </div>
+        <div id="contact">
           <Contact />
-        </ScrollableAnchor>
+        </div>
         <Footer />
       </>
     );
