@@ -9,10 +9,11 @@ import './footer.scss';
 const Footer = () => {
   return (
     <footer className="footer">
-      <div>
+      <div className="footer-content">
         <h4>
           <img src={logo} alt="LOGO" />
         </h4>
+        <br />
         <a href="https://github.com/0zzycodes">
           <div className="logo-border">
             <img src={github} alt="Facebook Logo" />
@@ -39,6 +40,7 @@ const Footer = () => {
           </div>
         </a>
       </div>
+      <br />
       <p className="copyright">Copyright ©2019 All rights reserved | Ozzy.io</p>
     </footer>
   );
