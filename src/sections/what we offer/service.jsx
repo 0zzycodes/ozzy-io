@@ -16,29 +16,27 @@ const Service = () => {
       <div className="section-content container">
         <div className="box">
           <img src={design} alt="Design Logo" />
-          <h4 className="title">UX Design</h4>
+          <h4 className="title"> Design & UX</h4>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui
-            asperiores ab architecto sunt expedita iusto quisquam nobis cumque
-            autem facilis.
+            Interface design <strong>/</strong> Illustration <strong>/</strong>{' '}
+            Graphic Design.
           </p>
         </div>
         <div className="box">
           <img src={code} alt="Design Logo" />
           <h4 className="title">Web Development</h4>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui
-            asperiores ab architecto sunt expedita iusto quisquam nobis cumque
-            autem facilis.
+            APIs <strong>/</strong> Mobile Responsive <strong>/</strong>{' '}
+            WordPress <strong>/</strong> Javascript <strong>/</strong> React.JS{' '}
+            <strong>/</strong> Node.JS & MongoDB.
           </p>
         </div>
         <div className="box">
           <img src={app} alt="Design Logo" />
           <h4 className="title">Web Apps</h4>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui
-            asperiores ab architecto sunt expedita iusto quisquam nobis cumque
-            autem facilis.
+            APIs <strong>/</strong> Mobile Responsive <strong>/</strong>{' '}
+            React.JS <strong>/</strong> Node.JS & MongoDB.
           </p>
         </div>
       </div>

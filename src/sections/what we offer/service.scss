@@ -7,36 +7,33 @@
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        // grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-        // grid-gap: 50px; 
 
         .box {
             text-align: center;
             padding: 20px 20px 30px 20px;
             color: #020202;
-            background-color: #f4f4fd;
+            // background-color: #f4f4fd;
             margin: 20px;
             width: 280px;
 
-            &:hover {
-                background-color: #fff;
-
-            }
 
             img {
                 width: 50px;
                 margin-bottom: 10px;
+                background-color: #006eff;
+                padding: 15px 20px;
             }
 
             h4 {
                 margin-bottom: 10px;
+                color: #f4f4fd;
             }
 
             p {
                 font-size: 18px;
                 font-weight: 300;
                 font-family: 'Lato', sans-serif;
-                color: lighten($color: #1b1b1b, $amount: 10);
+                color: lighten($color: #f4f4fd, $amount: 10);
             }
         }
     }

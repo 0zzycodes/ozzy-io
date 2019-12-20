@@ -45,7 +45,6 @@ const Header = () => {
                     to="about"
                     spy={true}
                     smooth={true}
-                    offset={-40}
                     duration={500}
                     onClick={handleScroll}
                     className="option"
@@ -57,7 +56,6 @@ const Header = () => {
                     to="service"
                     spy={true}
                     smooth={true}
-                    offset={-40}
                     duration={500}
                     onClick={handleScroll}
                     className="option"
@@ -69,7 +67,6 @@ const Header = () => {
                     to="work"
                     spy={true}
                     smooth={true}
-                    offset={-40}
                     duration={500}
                     onClick={handleScroll}
                     className="option"
@@ -81,7 +78,7 @@ const Header = () => {
                     to="contact"
                     spy={true}
                     smooth={true}
-                    offset={-40}
+                    offset={-100}
                     duration={500}
                     onClick={handleScroll}
                     className="option"

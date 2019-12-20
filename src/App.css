@@ -104,7 +104,7 @@ a {
   content: '';
   width: 50px;
   height: 2px;
-  background: linear-gradient(#006eff, #0f5abd, #164685, #003375, #37504f);
+  background: #006eff;
   left: 0;
   bottom: 0;
 }

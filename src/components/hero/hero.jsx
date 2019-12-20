@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-scroll';
 import duc from '../../assets/duc.png';
 import './hero.scss';
 import CustomButton from '../custom-button/custom-button';
@@ -13,7 +14,10 @@ const Hero = () => {
             <span className="name">Ozzy</span>
           </h3>
           <p>A Self-Taught UI/UX Designer and Full-Stack Developer. </p>
-          <CustomButton>SEE MY WORKS</CustomButton>
+
+          <Link to="work" spy={true} smooth={true} duration={500}>
+            <CustomButton>SEE MY WORKS</CustomButton>
+          </Link>
         </div>
       </div>
     </div>

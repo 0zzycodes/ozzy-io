@@ -13,13 +13,15 @@ const About = () => {
             <span className="sort-description"></span>
           </h3>
           <p>
-            I am an experienced self-taught web developer from Nigeria. I have
-            been fascinated with building a web application and solving problems
-            using programming, my interest has led me to learn web technologies
-            such as HTML5, CSS3, JavaScript and a framework called ReactJs. I
-            have taken part in many different projects, some of them personal,
-            others, team project, I believe my experience with those projects
-            makes me the best candidate for web development related work
+            I'm a skilled and passionate self-taught Full-Stack Developer from
+            Nigeria. I have been fascinated with building a web application and
+            solving problems using programming, my interest has led me to learn
+            both font-end and backend technologies such as HTML5, CSS3,
+            JavaScript, ReactJs and NodeJs. I have taken part in many different
+            projects, some of them personal, others, team project, I believe my
+            experience with those projects makes me the best candidate for web
+            development related work. <br /> On my spare time, I love to play
+            games, build projects and do freelance work.
           </p>
           <CustomButton showImage="showImage">
             DOWNLOAD RESUME <img src={download} alt="Download Icon" />
@@ -39,6 +41,7 @@ const About = () => {
               <ul>
                 <li>React.js</li>
                 <li>Node.js</li>
+                <li>Express.js</li>
               </ul>
             </div>
             <div className="res">
@@ -69,7 +72,7 @@ const About = () => {
             <div className="back-end">
               <h3 className="about-title">Back-End</h3>
               <ul>
-                <li>JAVASCRIPT (NODE.JS)</li>
+                <li>JAVASCRIPT (NODE.JS / EXPRESS.JS)</li>
               </ul>
             </div>
           </div>

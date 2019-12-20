@@ -1,6 +1,6 @@
 import React from 'react';
 import './project-preview.scss';
-const ProjectPreview = ({ image, title, stack }) => {
+const ProjectPreview = ({ image, title, stack, demo, source }) => {
   return (
     <div className="project-preview">
       <div className="head">
@@ -25,7 +25,7 @@ const ProjectPreview = ({ image, title, stack }) => {
               <span key={item}>{item}</span>
             ))}
           </div>
-          <a href="/" className="demo">
+          <a href={demo} className="demo">
             Demo
           </a>
           <a href="/" className="source">
