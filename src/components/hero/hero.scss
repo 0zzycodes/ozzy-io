@@ -14,6 +14,7 @@ $secondaryColor: #1b1b1b;
     height: 100%;
     display: flex;
     align-items: center;
+    justify-content: center;
     overflow: hidden;
     position: relative;
     background: transparent;
@@ -30,11 +31,11 @@ $secondaryColor: #1b1b1b;
     }
 
     .posis {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        right: 0;
-        left: 0;
+        // position: absolute;
+        // top: 0;
+        // bottom: 0;
+        // right: 0;
+        // left: 0;
         z-index: 5;
         display: flex;
         align-items: center;
@@ -42,6 +43,11 @@ $secondaryColor: #1b1b1b;
 
 
     .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
 
         .intro {
             color: $secondaryColor;
@@ -81,13 +87,13 @@ $secondaryColor: #1b1b1b;
 @media screen and (max-width: $smallScreen) {
     .hero {
 
-        .clipy {
-            width: 50vh;
-            height: 50vh;
-            bottom: 0px;
-            right: -90px;
-            transform: rotate(0deg);
-        }
+        // .clipy {
+        //     width: 50vh;
+        //     height: 50vh;
+        //     bottom: 0px;
+        //     right: -90px;
+        //     transform: rotate(0deg);
+        // }
 
         .content {
 

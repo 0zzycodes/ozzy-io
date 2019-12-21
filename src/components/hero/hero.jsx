@@ -1,12 +1,12 @@
 import React from 'react';
 import { Link } from 'react-scroll';
-import duc from '../../assets/duc.png';
+// import duc from '../../assets/duc.png';
 import './hero.scss';
 import CustomButton from '../custom-button/custom-button';
 const Hero = () => {
   return (
     <div className="hero container">
-      <img src={duc} alt="HeroImage" id="target" className="clipy" />
+      {/* <img src={duc} alt="HeroImage" id="target" className="clipy" /> */}
       <div className="posis">
         <div className="content">
           <h3 className="intro">

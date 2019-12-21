@@ -2,6 +2,7 @@ import React from 'react';
 import './about.scss';
 import download from '../../assets/download.svg';
 import single from '../../assets/single.png';
+import resume from '../../assets/resume.jpg';
 import CustomButton from '../../components/custom-button/custom-button';
 const About = () => {
   return (
@@ -23,9 +24,11 @@ const About = () => {
             development related work. <br /> On my spare time, I love to play
             games, build projects and do freelance work.
           </p>
-          <CustomButton showImage="showImage">
-            DOWNLOAD RESUME <img src={download} alt="Download Icon" />
-          </CustomButton>
+          <a href={resume} download>
+            <CustomButton showImage="showImage">
+              DOWNLOAD RESUME <img src={download} alt="Download Icon" />
+            </CustomButton>
+          </a>
         </div>
         <div className="about-image">
           <img src={single} alt="About-vector-illustrator" />
