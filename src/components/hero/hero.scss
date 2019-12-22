@@ -19,14 +19,19 @@ $secondaryColor: #1b1b1b;
     position: relative;
     background: transparent;
 
-    .hello {
-        width: 10vh;
-        height: 10vh;
+    .hero-image {
         background: $primaryColor;
-        margin-bottom: 20px;
-        transform: rotate(0deg);
-        animation: wave .5s infinite alternate ease;
-        animation-iteration-count: 10;
+        border-radius: 50%;
+
+        .hello {
+            width: 10vh;
+            height: 10vh;
+            margin-bottom: 20px;
+            transform: rotate(0deg);
+            animation: wave .4s linear infinite alternate;
+            transform-origin: bottom;
+            animation-iteration-count: 5;
+        }
     }
 
     @keyframes wave {
@@ -34,27 +39,13 @@ $secondaryColor: #1b1b1b;
             transform: rotate(-30deg);
         }
 
-        25% {
-            transform: rotate(0deg);
-        }
-
-        50% {
-            transform: rotate(30deg);
-
-        }
-
         100% {
-            transform: rotate(0deg);
+            transform: rotate(30deg);
 
         }
     }
 
     .posis {
-        // position: absolute;
-        // top: 0;
-        // bottom: 0;
-        // right: 0;
-        // left: 0;
         z-index: 5;
         display: flex;
         align-items: center;
@@ -82,12 +73,6 @@ $secondaryColor: #1b1b1b;
 
         }
 
-        // @include smartphone() {
-        //     .intro {
-        //         font-size: 18px;
-        //     }
-        // }
-
         p {
             background: $primaryColor;
             margin-bottom: 25px;
@@ -105,14 +90,6 @@ $secondaryColor: #1b1b1b;
 
 @media screen and (max-width: $smallScreen) {
     .hero {
-
-        // .clipy {
-        //     width: 50vh;
-        //     height: 50vh;
-        //     bottom: 0px;
-        //     right: -90px;
-        //     transform: rotate(0deg);
-        // }
 
         .content {
 

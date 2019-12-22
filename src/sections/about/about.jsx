@@ -1,8 +1,12 @@
 import React from 'react';
 import './about.scss';
 import download from '../../assets/download.svg';
+import html5 from '../../assets/html5.svg';
+import css3 from '../../assets/css3.svg';
+import js from '../../assets/js.svg';
+import nodejs from '../../assets/nodejs.svg';
 import single from '../../assets/single.png';
-import resume from '../../assets/resume.jpg';
+import resume from '../../assets/resume.pdf';
 import CustomButton from '../../components/custom-button/custom-button';
 const About = () => {
   return (
@@ -67,15 +71,15 @@ const About = () => {
             <div className="front-end">
               <h3 className="about-title">Front-End</h3>
               <ul>
-                <li>HTML5</li>
-                <li>CSS3</li>
-                <li>JAVASCRIPT (REACT.JS)</li>
+                <li> <img src={html5} alt=""/> HTML5</li>
+                <li> <img src={css3} alt=""/> CSS3</li>
+                <li> <img src={js} alt=""/> JAVASCRIPT (REACT.JS)</li>
               </ul>
             </div>
             <div className="back-end">
               <h3 className="about-title">Back-End</h3>
               <ul>
-                <li>JAVASCRIPT (NODE.JS / EXPRESS.JS)</li>
+                <li> <img src={nodejs} alt=""/> JAVASCRIPT (NODE.JS / EXPRESS.JS)</li>
               </ul>
             </div>
           </div>

@@ -8,7 +8,9 @@ const Hero = () => {
     <div className="hero container">
       <div className="posis">
         <div className="content">
-          <img src={hello} alt="HeroImage" id="target" className="hello" />
+          <div className="hero-image">
+            <img src={hello} alt="HeroImage" id="target" className="hello" />
+          </div>
           <h3 className="intro">
             Hi, I'm <span className="name">Ibrahim</span> <del>a.k.a</del>
             <span className="name"> Ozzy</span>
