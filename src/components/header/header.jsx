@@ -21,7 +21,7 @@ const Header = () => {
   };
   return (
     <header className="header">
-      <nav className="navbar">
+      <nav className="navbar fancy">
         <div className="nav-links container">
           <div className="show">
             <div className="brand">

@@ -2,7 +2,7 @@ $primaryColor: #f4f4fd;
 $secondaryColor: #1b1b1b;
 
 .project-preview {
-  margin: 30px 0px;
+  margin: 0px 0px 30px;
   position: relative;
   display: flex;
   align-items: center;
@@ -38,19 +38,24 @@ $secondaryColor: #1b1b1b;
     .project-title {
       display: inline-block;
       color: #006eff;
-      border-bottom: 2px solid #006eff;
       position: relative;
       margin-bottom: 20px;
     }
 
+    .project-title:before,
     .project-title:after {
       position: absolute;
       content: '';
-      width: 50%;
+      width: 120px;
       height: 2px;
       background: #006eff;
       left: 0;
-      bottom: -7px;
+      bottom: -1px;
+    }
+
+    .project-title:before {
+      bottom: -6px;
+      width: 80px;
     }
 
     span {

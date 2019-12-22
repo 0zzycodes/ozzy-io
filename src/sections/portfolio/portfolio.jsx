@@ -1,5 +1,5 @@
 import React from 'react';
-import completed from '../../assets/completed.svg';
+import tick from '../../assets/tick.svg';
 import happy from '../../assets/happy.svg';
 import codeLine from '../../assets/codeLine.svg';
 import portfolio from '../../assets/portfolio.png';
@@ -25,7 +25,7 @@ const Portfolio = () => {
         <ProjectPreview
           image={portfolio}
           title="My Portfolio"
-          stack={['HTML5', 'CSS3', 'JAVASCRIPT', 'REACT']}
+          stack={['REACT']}
           demo="https://ozzy-dev.netlify.com"
           source=""
         />
@@ -89,7 +89,7 @@ const Portfolio = () => {
             </span>
           </div>
           <div className="info">
-            <img src={completed} alt="Finished-Projects" />
+            <img src={tick} alt="Finished-Projects" />
             <br />
             <span>
               145 <br /> Finished Projects

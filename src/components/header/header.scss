@@ -27,13 +27,16 @@ $bgSize: 109px 109px,
   background-size: $bgSize;
 
 
+  .fancy {
+    background: $bgImage;
+    background-size: $bgSize;
+  }
+
   .navbar {
     position: fixed;
     top: 0;
     right: 0;
     left: 0;
-    background: $bgImage;
-    background-size: $bgSize;
     z-index: 6;
     padding: 20px 0 10px 0;
     transition: all 1s;
@@ -97,9 +100,10 @@ $bgSize: 109px 109px,
         margin: 10px;
         width: 20px;
         height: 20px;
+        background: lighten($color: $primaryColor, $amount: 10);
 
         &:hover {
-          background: lighten($color: $primaryColor, $amount: 10);
+          background: $primaryColor;
         }
 
         img {

@@ -8,9 +8,21 @@ import Footer from './components/footer/footer';
 import Contact from './sections/contact/contact';
 
 class App extends React.Component {
+  state = {};
+  componentDidMount() {
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 0) {
+        document.querySelector('.navbar').classList.remove('fancy');
+        document.querySelector('.navbar').classList.add('white-bg');
+      } else {
+        document.querySelector('.navbar').classList.add('fancy');
+        document.querySelector('.navbar').classList.remove('white-bg');
+      }
+    });
+  }
   render() {
     return (
-      <>
+      <div className="app">
         <Header />
         <div id="about">
           <About />
@@ -25,7 +37,7 @@ class App extends React.Component {
           <Contact />
         </div>
         <Footer />
-      </>
+      </div>
     );
   }
 }
