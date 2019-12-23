@@ -28,7 +28,8 @@ const About = () => {
             development related work. <br /> On my spare time, I love to play
             games, build projects and do freelance work.
           </p>
-          <a href={resume} download>
+
+          <a href={resume} rel="noopener noreferrer" target="_blank" download>
             <CustomButton showImage="showImage">
               DOWNLOAD RESUME <img src={download} alt="Download Icon" />
             </CustomButton>
@@ -71,15 +72,27 @@ const About = () => {
             <div className="front-end">
               <h3 className="about-title">Front-End</h3>
               <ul>
-                <li> <img src={html5} alt=""/> HTML5</li>
-                <li> <img src={css3} alt=""/> CSS3</li>
-                <li> <img src={js} alt=""/> JAVASCRIPT (REACT.JS)</li>
+                <li>
+                  {' '}
+                  <img src={html5} alt="" /> HTML5
+                </li>
+                <li>
+                  {' '}
+                  <img src={css3} alt="" /> CSS3
+                </li>
+                <li>
+                  {' '}
+                  <img src={js} alt="" /> JAVASCRIPT (REACT.JS)
+                </li>
               </ul>
             </div>
             <div className="back-end">
               <h3 className="about-title">Back-End</h3>
               <ul>
-                <li> <img src={nodejs} alt=""/> JAVASCRIPT (NODE.JS / EXPRESS.JS)</li>
+                <li>
+                  {' '}
+                  <img src={nodejs} alt="" /> JAVASCRIPT (NODE.JS / EXPRESS.JS)
+                </li>
               </ul>
             </div>
           </div>
