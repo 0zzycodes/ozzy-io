@@ -9,6 +9,7 @@ import p2 from '../../assets/p2.jpg';
 import p3 from '../../assets/p3.png';
 import p4 from '../../assets/p4.png';
 import p5 from '../../assets/p5.png';
+import p6 from '../../assets/p6.png';
 import './portfolio.scss';
 import ProjectPreview from '../../components/project-preview/project-preview';
 const Portfolio = () => {
@@ -27,6 +28,13 @@ const Portfolio = () => {
           title="My Portfolio"
           stack={['REACT']}
           demo="https://ozzy-dev.netlify.com"
+          source=""
+        />
+        <ProjectPreview
+          image={p6}
+          title="Ozzy Weather App"
+          stack={['HTML5', 'CSS3', 'JAVASCRIPT']}
+          demo="https://ozzy-weather-app-v2.netlify.com"
           source=""
         />
         <ProjectPreview
