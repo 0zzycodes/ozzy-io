@@ -16,6 +16,8 @@ $secondaryColor: #1b1b1b;
         margin-bottom: 30px;
 
         .about-image {
+            margin-right: 40px;
+
             img {
                 width: 350px;
             }
@@ -119,8 +121,12 @@ $secondaryColor: #1b1b1b;
             flex-direction: column-reverse;
 
             .about-image {
+                margin: 0;
+                margin-bottom: 30px;
+                text-align: center;
+
                 img {
-                    width: 200px;
+                    width: 80%;
                 }
             }
         }
