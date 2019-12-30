@@ -5,7 +5,7 @@ import html5 from '../../assets/html5.svg';
 import css3 from '../../assets/css3.svg';
 import js from '../../assets/js.svg';
 import nodejs from '../../assets/nodejs.svg';
-import about from '../../assets/about.png';
+import about from '../../assets/about.svg';
 import resume from '../../assets/resume.pdf';
 import CustomButton from '../../components/custom-button/custom-button';
 const About = () => {
