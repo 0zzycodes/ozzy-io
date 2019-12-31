@@ -10,6 +10,7 @@ import p3 from '../../assets/p3.png';
 import p4 from '../../assets/p4.png';
 import p5 from '../../assets/p5.png';
 import p6 from '../../assets/p6.png';
+import p7 from '../../assets/p7.png';
 import './portfolio.scss';
 import ProjectPreview from '../../components/project-preview/project-preview';
 const Portfolio = () => {
@@ -35,6 +36,13 @@ const Portfolio = () => {
           title="Ozzy Weather App"
           stack={['HTML5', 'CSS3', 'JAVASCRIPT']}
           demo="https://ozzy-weather-app-v2.netlify.com"
+          source=""
+        />
+        <ProjectPreview
+          image={p7}
+          title="Onling Foods"
+          stack={['HTML5', 'CSS3', 'JAVASCRIPT']}
+          demo="https://onling-food.netlify.com"
           source=""
         />
         <ProjectPreview
