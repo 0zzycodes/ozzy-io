@@ -85,5 +85,9 @@ $bgSize: 109px 109px,
         color: $secondaryColor;
         background: $primaryColor;
         display: inline-block;
+
+        a {
+            color: #006eff;
+        }
     }
 }

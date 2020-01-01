@@ -41,7 +41,10 @@ const Footer = () => {
         </a>
       </div>
       <br />
-      <p className="copyright">Copyright ©2019 All rights reserved | Ozzy.io</p>
+      <p className="copyright">
+        Copyright &copy; {new Date().getFullYear()} All rights reserved |{' '}
+        <a href="https://ozzy-dev.netlify.com">Ozzy.dev</a>
+      </p>
     </footer>
   );
 };
