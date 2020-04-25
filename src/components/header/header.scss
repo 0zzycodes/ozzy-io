@@ -2,17 +2,28 @@ $smartphone-width: 600px;
 $primaryColor: #f4f4fd;
 $secondaryColor: #1b1b1b;
 $bgImage: radial-gradient($primaryColor 1px, transparent 4px),
-radial-gradient(#006eff 4px, transparent 4px),
-linear-gradient($primaryColor 5px, transparent 0),
-linear-gradient(45deg, transparent 74px, transparent 75px, #a4a4a4 75px, #a4a4a4 76px, transparent 77px, transparent 109px),
-linear-gradient(-45deg, transparent 75px, transparent 76px, #a4a4a4 76px, #a4a4a4 77px, transparent 78px, transparent 109px),
-$primaryColor;
-$bgSize: 109px 109px,
-109px 109px,
-109% 109px,
-109px 109px,
-109px 109px;
-
+  radial-gradient(#006eff 4px, transparent 4px),
+  linear-gradient($primaryColor 5px, transparent 0),
+  linear-gradient(
+    45deg,
+    transparent 74px,
+    transparent 75px,
+    #a4a4a4 75px,
+    #a4a4a4 76px,
+    transparent 77px,
+    transparent 109px
+  ),
+  linear-gradient(
+    -45deg,
+    transparent 75px,
+    transparent 76px,
+    #a4a4a4 76px,
+    #a4a4a4 77px,
+    transparent 78px,
+    transparent 109px
+  ),
+  $primaryColor;
+$bgSize: 109px 109px, 109px 109px, 109% 109px, 109px 109px, 109px 109px;
 
 @mixin smartphone {
   @media (max-width: #{$smartphone-width}) {
@@ -26,7 +37,6 @@ $bgSize: 109px 109px,
   background: $bgImage;
   background-size: $bgSize;
 
-
   .fancy {
     background: $bgImage;
     background-size: $bgSize;
@@ -38,13 +48,15 @@ $bgSize: 109px 109px,
     right: 0;
     left: 0;
     z-index: 6;
-    padding: 20px 0 10px 0;
+    padding: 20px 0 0px 0;
     transition: all 1s;
 
     .brand {
       background: $primaryColor;
       border-radius: 50%;
       padding: 5px;
+      width: 70px;
+      height: 70px;
 
       a {
         color: $secondaryColor;
@@ -53,6 +65,10 @@ $bgSize: 109px 109px,
         display: flex;
         align-items: center;
         font-size: 20px;
+        img {
+          width: 100%;
+          height: 100%;
+        }
       }
     }
 
@@ -100,15 +116,14 @@ $bgSize: 109px 109px,
         margin: 10px;
         width: 20px;
         height: 20px;
-        background: lighten($color: $primaryColor, $amount: 10);
+        background: #f4f4fda9;
 
         &:hover {
-          background: $primaryColor;
+          background: #f4f4fdd5;
         }
 
         img {
           width: 20px;
-
         }
       }
 
@@ -127,8 +142,6 @@ $bgSize: 109px 109px,
 
       a {
         color: $secondaryColor;
-
-
       }
 
       .option {
@@ -168,22 +181,20 @@ $bgSize: 109px 109px,
 
         /*IE 10+*/
         &:nth-child(3) {
-          animation-delay: .1s;
+          animation-delay: 0.1s;
         }
 
         &:nth-child(5) {
-          animation-delay: .2s;
+          animation-delay: 0.2s;
         }
 
         &:nth-child(7) {
-          animation-delay: .3s;
+          animation-delay: 0.3s;
         }
 
         &:last-child {
-          animation-delay: .4s;
+          animation-delay: 0.4s;
         }
-
-
       }
     }
   }

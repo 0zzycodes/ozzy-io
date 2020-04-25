@@ -1,45 +1,52 @@
 .portfolio {
-    color: #f4f4fd;
-    padding-top: 100px;
+  color: #f4f4fd;
+  padding-top: 100px;
 
-    .project-list {
+  .project-list {
+    display: flex;
+    flex-direction: column;
+    .loader {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 30px;
+      }
+    }
+  }
+
+  .infos {
+    margin-top: 50px;
+    padding: 50px 0;
+    text-align: center;
+
+    .info-container {
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+
+      .info {
         display: flex;
-        flex-direction: column;
-    }
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+        margin: 20px;
+        width: 230px;
+        // border: 1px solid blue;
+        padding: 20px 0;
 
-    .infos {
-        margin-top: 50px;
-        padding: 50px 0;
-        text-align: center;
-
-        .info-container {
-            display: flex;
-            justify-content: space-evenly;
-            flex-wrap: wrap;
-
-            .info {
-                display: flex;
-                // flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                margin-bottom: 20px;
-                margin: 20px;
-                width: 230px;
-                // border: 1px solid blue;
-                padding: 20px 0;
-
-                img {
-                    height: 50px;
-                    margin-right: 10px;
-                    margin-bottom: 10px;
-                    background-color: #006eff;
-                    padding: 15px 20px;
-                }
-
-                span {
-                    color: #f4f4fd;
-                }
-            }
+        img {
+          height: 50px;
+          margin-right: 10px;
+          margin-bottom: 10px;
+          background-color: #006eff;
+          padding: 15px 20px;
         }
+
+        span {
+          color: #f4f4fd;
+        }
+      }
     }
+  }
 }

@@ -15,7 +15,7 @@ const Hero = () => {
             Hi, I'm <span className="name">Ibrahim</span> <del>a.k.a</del>
             <span className="name"> Ozzy</span>
           </h3>
-          <p>A Self-Taught UI/UX Designer and Full-Stack Developer. </p>
+          <p>A Self-Taught Full-Stack Developer. </p>
 
           <Link to="work" spy={true} smooth={true} duration={500}>
             <CustomButton>SEE MY WORKS</CustomButton>

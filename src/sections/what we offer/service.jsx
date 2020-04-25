@@ -18,25 +18,25 @@ const Service = () => {
           <img src={design} alt="Design Logo" />
           <h4 className="title"> Design & UX</h4>
           <p>
-            Interface design <strong>/</strong> Illustration <strong>/</strong>{' '}
-            Graphic Design.
+            Interface design <strong>&mdash;</strong> Illustration{' '}
+            <strong>&mdash;</strong> Graphic Design.
           </p>
         </div>
         <div className="box">
           <img src={code} alt="Design Logo" />
           <h4 className="title">Web Development</h4>
           <p>
-            APIs <strong>/</strong> Mobile Responsive <strong>/</strong>{' '}
-            WordPress <strong>/</strong> Javascript <strong>/</strong> React.JS{' '}
-            <strong>/</strong> Node.JS & MongoDB.
+            APIs <strong>&mdash;</strong> Mobile Responsive <strong>&mdash;</strong>{' '}
+            WordPress <strong>&mdash;</strong> Javascript <strong>&mdash;</strong>{' '}
+            React.JS <strong>&mdash;</strong> Node.JS & MongoDB.
           </p>
         </div>
         <div className="box">
           <img src={app} alt="Design Logo" />
           <h4 className="title">Web Apps</h4>
           <p>
-            APIs <strong>/</strong> Mobile Responsive <strong>/</strong>{' '}
-            React.JS <strong>/</strong> Node.JS & MongoDB.
+            APIs <strong>&mdash;</strong> Mobile Responsive <strong>&mdash;</strong>{' '}
+            React.JS <strong>&mdash;</strong> Node.JS & MongoDB.
           </p>
         </div>
       </div>

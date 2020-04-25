@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../../assets/logo.png';
+import logo2 from '../../assets/logo2.png';
 import instagram from '../../assets/instagram.svg';
 import facebook from '../../assets/facebook.svg';
 import twitter from '../../assets/twitter.svg';
@@ -11,7 +11,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-content">
         <h4>
-          <img src={logo} alt="LOGO" />
+          <img src={logo2} alt="LOGO" />
         </h4>
         <br />
         <a href="https://github.com/0zzycodes">

@@ -3,101 +3,94 @@ $smallScreen: 800px;
 $primaryColor: #f4f4fd;
 $secondaryColor: #1b1b1b;
 
-
 @mixin smartphone {
-    @media (max-width: #{$smartphone-width}) {
-        @content;
-    }
+  @media (max-width: #{$smartphone-width}) {
+    @content;
+  }
 }
 
 .hero {
-    height: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  background: transparent;
+
+  .hero-image {
+    background: $primaryColor;
+    border-radius: 50%;
+
+    .hello {
+      width: 10vh;
+      height: 10vh;
+      margin-bottom: 20px;
+      transform: rotate(0deg);
+      animation: wave 0.4s linear infinite alternate;
+      transform-origin: bottom;
+      animation-iteration-count: 5;
+    }
+  }
+
+  @keyframes wave {
+    0% {
+      transform: rotate(-30deg);
+    }
+
+    100% {
+      transform: rotate(30deg);
+    }
+  }
+
+  .posis {
+    z-index: 5;
     display: flex;
     align-items: center;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    overflow: hidden;
-    position: relative;
-    background: transparent;
+    text-align: center;
 
-    .hero-image {
-        background: $primaryColor;
-        border-radius: 50%;
+    .intro {
+      color: $secondaryColor;
+      font-size: 35px;
+      font-weight: 100;
+      background: $primaryColor;
 
-        .hello {
-            width: 10vh;
-            height: 10vh;
-            margin-bottom: 20px;
-            transform: rotate(0deg);
-            animation: wave .4s linear infinite alternate;
-            transform-origin: bottom;
-            animation-iteration-count: 5;
-        }
+      .name {
+        background: linear-gradient(#006eff, #00a8ff, #0e63d1);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
     }
 
-    @keyframes wave {
-        0% {
-            transform: rotate(-30deg);
-        }
-
-        100% {
-            transform: rotate(30deg);
-
-        }
+    p {
+      background: $primaryColor;
+      margin-bottom: 25px;
+      color: lighten($color: $secondaryColor, $amount: 10);
     }
 
-    .posis {
-        z-index: 5;
-        display: flex;
-        align-items: center;
+    @include smartphone() {
+      p {
+        font-size: 17px;
+      }
     }
-
-
-    .content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-
-        .intro {
-            color: $secondaryColor;
-            font-size: 35px;
-            font-weight: 100;
-            background: $primaryColor;
-
-            .name {
-                background: linear-gradient(#006eff, #0f5abd, #164685, #003375, #37504f);
-                background-clip: text;
-                -webkit-text-fill-color: transparent;
-            }
-
-        }
-
-        p {
-            background: $primaryColor;
-            margin-bottom: 25px;
-            color: lighten($color: $secondaryColor, $amount: 10);
-        }
-
-        @include smartphone() {
-            p {
-                font-size: 17px;
-            }
-        }
-    }
+  }
 }
 
-
 @media screen and (max-width: $smallScreen) {
-    .hero {
-
-        .content {
-
-            .intro {
-                color: $secondaryColor;
-                font-size: 30px;
-                font-weight: 100;
-            }
-        }
+  .hero {
+    .content {
+      .intro {
+        color: $secondaryColor;
+        font-size: 30px;
+        font-weight: 100;
+      }
     }
+  }
 }

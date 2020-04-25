@@ -1,31 +1,28 @@
 import React from 'react';
 import FormInput from '../../components/form-input/form-input';
 import CustomButton from '../../components/custom-button/custom-button';
-// import emailLogo from '../../assets/emailLogo.svg';
 import './contact.scss';
 
 export default class Contact extends React.Component {
   constructor() {
     super();
     this.state = {
-      firstName: '',
-      lastName: '',
+      fullName: '',
       email: '',
       comment: '',
-      address: ''
+      address: '',
     };
   }
-  handleChange = e => {
+  handleChange = (e) => {
     const { name, value } = e.target;
     this.setState({ [name]: value });
   };
-  handleSubmit = async e => {
+  handleSubmit = async (e) => {
     e.preventDefault();
-    // const { firstName, lastName, email, comment, address } = this.state;
-    console.log(e);
+    // const { fullName, lastName, email, comment, address } = this.state;
   };
   render() {
-    const { firstName, lastName, email, comment } = this.state;
+    const { fullName, email, comment } = this.state;
     return (
       <div className="contain" id="contact">
         <div className="contact-section">
@@ -40,16 +37,9 @@ export default class Contact extends React.Component {
                 <h3>SEND A MESSAGE</h3>
                 <FormInput
                   type="text"
-                  name="firstName"
-                  value={firstName}
-                  label="First Name"
-                  onChange={this.handleChange}
-                />
-                <FormInput
-                  type="text"
-                  name="lastName"
-                  value={lastName}
-                  label="Last Name"
+                  name="fullName"
+                  value={fullName}
+                  label="Full Name"
                   onChange={this.handleChange}
                 />
                 <FormInput
@@ -97,7 +87,7 @@ export default class Contact extends React.Component {
                     <span className="key-title">Phone:</span>
                     <br />
                     <br />
-                    <span className="val">+234 902604074</span>
+                    <span className="val">+234 9026040774</span>
                   </li>
                   <li className="">
                     <span className="key-title">Email:</span>

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-scroll';
-import logo from '../../assets/logo.png';
+// import logo from '../../assets/logo.png';
+import logo2 from '../../assets/logo2.png';
 import menuButton from '../../assets/menuButton.svg';
 import close from '../../assets/close.svg';
 import instagram from '../../assets/instagram.svg';
@@ -26,7 +27,7 @@ const Header = () => {
           <div className="show">
             <div className="brand">
               <a href="/">
-                <img src={logo} alt="LOGO" className="logo-icon" />
+                <img src={logo2} alt="LOGO" className="logo-icon" />
               </a>
             </div>
 
