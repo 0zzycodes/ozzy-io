@@ -1,7 +1,7 @@
 import React from 'react';
 import './project-preview.scss';
 const ProjectPreview = ({ data }) => {
-  const { image, title, stack, demo, description } = data;
+  const { image, title, stack, demo, source, description } = data;
   return (
     <div className="project-preview">
       <div className="head">
@@ -33,7 +33,7 @@ const ProjectPreview = ({ data }) => {
           <a href={demo} className="demo">
             Demo
           </a>
-          <a href="/" className="source">
+          <a href={source? source: '/'} className="source">
             Source
           </a>
         </div>
