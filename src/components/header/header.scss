@@ -57,7 +57,11 @@ $bgSize: 109px 109px, 109px 109px, 109% 109px, 109px 109px, 109px 109px;
       padding: 5px;
       width: 70px;
       height: 70px;
-
+      
+     @include smartphone() {
+width: 50px;
+      height: 50px
+}
       a {
         color: $secondaryColor;
         margin-right: 2px;
