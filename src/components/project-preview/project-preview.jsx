@@ -33,7 +33,7 @@ const ProjectPreview = ({ data }) => {
           <a href={demo} className="demo">
             Demo
           </a>
-          <a href={code? code: '/'} className="source">
+          <a href={data.code? data.code: '/'} className="source">
             Source
           </a>
         </div>
