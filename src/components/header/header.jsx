@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import { Link } from 'react-scroll';
 // import logo from '../../assets/logo.png';
 import logo2 from '../../assets/logo2.png';
-import menuButton from '../../assets/menuButton.svg';
+// import menuButton from '../../assets/menuButton.svg';
+import menu from '../../assets/menu.svg';
 import close from '../../assets/close.svg';
 import instagram from '../../assets/instagram.svg';
 import facebook from '../../assets/facebook.svg';
@@ -32,7 +33,7 @@ const Header = () => {
             </div>
 
             <img
-              src={isShow ? close : menuButton}
+              src={isShow ? close : menu}
               className="menu-button"
               alt="MenuIcon"
               onClick={toggleMenu}

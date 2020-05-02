@@ -1,135 +1,133 @@
 $sub-color: #f4f4fd;
 $main-color: #f4f4fd;
-$smallScreen : 800px;
+$smallScreen: 800px;
 $primaryColor: #f4f4fd;
 $secondaryColor: #1b1b1b;
 
 @mixin shrinkLabel {
-    top: -18px;
-    font-size: 13px;
-    color: $main-color;
+  top: -18px;
+  font-size: 13px;
+  color: $main-color;
 }
 
 .contain {
-    width: 80%;
-    display: flex;
-    padding: 0 40px;
-    margin: auto;
-    padding-top: 100px;
+  width: 80%;
+  display: flex;
+  padding: 0 40px;
+  margin: auto;
+  padding-top: 100px;
 }
 
 .contact-section {
-    color: #f4f4fd;
-    margin: auto;
+  color: #f4f4fd;
+  margin: auto;
 
-    .contact {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  .contact {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
 
-        margin-bottom: 100px;
+    margin-bottom: 100px;
 
-        .form {
-            display: flex;
-            padding: 20px 35px 20px 20px;
-            background-color: lighten($color: $secondaryColor, $amount: 5);
+    .form {
+      display: flex;
+      padding: 20px 35px 20px 20px;
+      background-color: lighten($color: $secondaryColor, $amount: 5);
 
-            form {
-                margin: auto;
-                width: 100%;
+      form {
+        margin: auto;
+        width: 100%;
 
-                img {
-                    margin-left: 10px;
-                    height: 20px;
-                }
-
-                .text-area {
-                    position: relative;
-
-                    .expand {
-                        height: 100px;
-                    }
-
-                    textarea {
-                        background: none;
-                        background-color: transparent;
-                        font-size: 18px;
-                        padding: 10px 10px 10px 5px;
-                        display: block;
-                        width: 100%;
-                        border: none;
-                        border-radius: 0;
-                        border-bottom: 2px solid $sub-color;
-                        margin: 25px 0;
-                        color: $sub-color;
-                        transition: all .5s;
-
-                        &:focus {
-                            outline: none;
-                            height: 100px;
-                        }
-
-                        &:focus~.form-input-label {
-                            @include shrinkLabel();
-                        }
-                    }
-
-                    .form-input-label {
-                        color: $sub-color;
-                        font-size: 17px;
-                        font-weight: normal;
-                        position: absolute;
-                        pointer-events: none;
-                        left: 5px;
-                        top: 10px;
-                        transition: 300ms ease all;
-
-                        &.shrink {
-                            @include shrinkLabel();
-                        }
-                    }
-                }
-
-            }
+        img {
+          margin-left: 10px;
+          height: 20px;
         }
 
+        .text-area {
+          position: relative;
 
-        .contact-info {
-            padding: 20px;
-            flex: 4;
+          .expand {
+            height: 100px;
+          }
 
-            .info {
-                li {
-                    list-style: none;
-                    padding: 10px 0;
-                }
+          textarea {
+            background: none;
+            background-color: transparent;
+            font-size: 18px;
+            padding: 10px 10px 10px 5px;
+            display: block;
+            width: 100%;
+            border: none;
+            border-radius: 0;
+            border-bottom: 2px solid $sub-color;
+            margin: 25px 0;
+            color: $sub-color;
+            transition: all 0.5s;
 
-                .key-title {
-                    font-size: large;
-                }
-
-                .val {
-                    color: #f4f4fdaf;
-                }
+            &:focus {
+              outline: none;
+              height: 100px;
             }
+
+            &:focus ~ .form-input-label {
+              @include shrinkLabel();
+            }
+          }
+
+          .form-input-label {
+            color: $sub-color;
+            font-size: 17px;
+            font-weight: normal;
+            position: absolute;
+            pointer-events: none;
+            left: 5px;
+            top: 10px;
+            transition: 300ms ease all;
+
+            &.shrink {
+              @include shrinkLabel();
+            }
+          }
         }
+      }
     }
+
+    .contact-info {
+      padding: 20px;
+      flex: 4;
+
+      .info {
+        li {
+          list-style: none;
+          padding: 10px 0;
+        }
+
+        .key-title {
+          font-size: large;
+        }
+
+        .val {
+          color: #f4f4fdaf;
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 600px) {
-    .contain {
-        display: block;
-        padding: 0;
+  .contain {
+    display: block;
+    padding: 0;
 
-        .contact-section {
-            padding-left: 0px;
+    .contact-section {
+      padding-left: 0px;
 
-            .contact {
-                grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            }
+      .contact {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      }
 
-            .contact-info {
-                padding: 20px;
-            }
-        }
+      .contact-info {
+        padding: 20px;
+      }
     }
+  }
 }

@@ -7,7 +7,7 @@ const reducer = (state, action) => {
     case 'UPDATE_PROJECT':
       return {
         ...state,
-        projects: action.payload,
+        projects: action.payload
       };
     default:
       return state;
@@ -17,16 +17,16 @@ const reducer = (state, action) => {
 export class Provider extends Component {
   state = {
     projects: [],
-    dispatch: (action) => this.setState((state) => reducer(state, action)),
+    dispatch: action => this.setState(state => reducer(state, action))
   };
 
   componentDidMount() {
     const projectRef = firestore
       .collection('projects')
       .orderBy('arrange', 'desc');
-    projectRef.onSnapshot(async (snapshot) => {
+    projectRef.onSnapshot(async snapshot => {
       const projects = [];
-      snapshot.docs.forEach((doc) => {
+      snapshot.docs.forEach(doc => {
         projects.push(doc.data());
       });
       this.setState({ projects: projects });

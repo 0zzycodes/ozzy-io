@@ -15,11 +15,11 @@ const About = () => {
         <div className="about-text">
           <h3 className="section-title about-title spec">
             ABOUT ME
-            <span className="sort-description"></span>
+            <span className="sort-description" />
           </h3>
           <p>
             I'm a skilled and passionate self-taught Full-Stack Developer from
-            Nigeria. I have been fascinated with building a web application and
+            Nigeria. I have been fascinated with building web applications and
             solving problems using programming, my interest has led me to learn
             both font-end and backend technologies such as HTML5, CSS3,
             JavaScript, ReactJs and NodeJs. I have taken part in many different

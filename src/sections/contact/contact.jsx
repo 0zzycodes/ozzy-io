@@ -10,14 +10,14 @@ export default class Contact extends React.Component {
       fullName: '',
       email: '',
       comment: '',
-      address: '',
+      address: ''
     };
   }
-  handleChange = (e) => {
+  handleChange = e => {
     const { name, value } = e.target;
     this.setState({ [name]: value });
   };
-  handleSubmit = async (e) => {
+  handleSubmit = async e => {
     e.preventDefault();
     // const { fullName, lastName, email, comment, address } = this.state;
   };
@@ -58,7 +58,7 @@ export default class Contact extends React.Component {
                     className={`${comment.length ? 'expand' : null}`}
                     cols="100"
                     rows="1"
-                  ></textarea>
+                  />
                   <label
                     className={`${
                       comment.length ? 'shrink' : ''
