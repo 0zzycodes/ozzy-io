@@ -1,2 +1,2 @@
 
-## Ozzy | Full-Stack Developer
+## Ozzy | Junior Full-Stack Developer
