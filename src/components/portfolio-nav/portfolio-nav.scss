@@ -32,10 +32,7 @@ $smartphone: 500px;
     color: #006eff;
     border: 2px solid #006eff;
     letter-spacing: 2px;
-    cursor: not-allowed;
-    &:first-child {
-      cursor: pointer;
-    }
+     cursor: pointer;
 
     @include smartphone() {
       margin: 5px;
