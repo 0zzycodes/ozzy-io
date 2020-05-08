@@ -1,0 +1,53 @@
+$tablet: 850px;
+$smartphone: 500px;
+
+// Mixin
+@mixin tablet {
+  @media (max-width: #{$tablet}) {
+    @content;
+  }
+}
+
+@mixin smartphone {
+  @media (max-width: #{$smartphone}) {
+    @content;
+  }
+}
+.portfolio-nav {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: -60px;
+  margin-bottom: 20px;
+  // @include smartphone() {
+  //   overflow-x: scroll;
+  // }
+  .link {
+    padding: 10px;
+    text-transform: uppercase;
+    margin: 10px;
+    font-size: 16px;
+    line-height: 1;
+    white-space: nowrap;
+    font-weight: 400;
+    color: #006eff;
+    border: 2px solid #006eff;
+    letter-spacing: 2px;
+    cursor: not-allowed;
+    &:first-child {
+      cursor: pointer;
+    }
+
+    @include smartphone() {
+      margin: 5px;
+      font-size: 14px;
+      letter-spacing: 1px;
+    }
+  }
+  .active {
+    background-color: #006eff;
+    color: #f4f4fd;
+  }
+}
