@@ -9,6 +9,16 @@ const reducer = (state, action) => {
         ...state,
         projects: action.payload,
       };
+    case 'FILTER_LIST':
+      return {
+        ...state,
+        filteredList:
+          action.payload === 'all'
+            ? state.projects
+            : state.projects.filter(
+                (project) => project.tag === action.payload
+              ),
+      };
     default:
       return state;
   }
@@ -17,6 +27,7 @@ const reducer = (state, action) => {
 export class Provider extends Component {
   state = {
     projects: [],
+    filteredList: [],
     dispatch: (action) => this.setState((state) => reducer(state, action)),
   };
 
@@ -29,7 +40,7 @@ export class Provider extends Component {
       snapshot.docs.forEach((doc) => {
         projects.push(doc.data());
       });
-      this.setState({ projects: projects });
+      this.setState({ projects: projects, filteredList: projects });
     });
   }
   render() {

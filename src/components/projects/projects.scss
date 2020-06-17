@@ -1,0 +1,12 @@
+.project-list {
+  display: flex;
+  flex-direction: column;
+  .loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 30px;
+    }
+  }
+}

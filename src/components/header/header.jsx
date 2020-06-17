@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-scroll';
-// import logo from '../../assets/logo.png';
 import logo2 from '../../assets/logo2.png';
-import menuButton from '../../assets/menuButton.svg';
+import menu from '../../assets/menu.svg';
 import close from '../../assets/close.svg';
 import instagram from '../../assets/instagram.svg';
 import facebook from '../../assets/facebook.svg';
@@ -14,7 +13,7 @@ import './header.scss';
 
 const Header = () => {
   const [isShow, setisShow] = useState(false);
-  const handleScroll = e => {
+  const handleScroll = (e) => {
     setisShow(!isShow);
   };
   const toggleMenu = () => {
@@ -32,7 +31,7 @@ const Header = () => {
             </div>
 
             <img
-              src={isShow ? close : menuButton}
+              src={isShow ? close : menu}
               className="menu-button"
               alt="MenuIcon"
               onClick={toggleMenu}
@@ -51,17 +50,6 @@ const Header = () => {
                     className="option"
                   >
                     ABOUT
-                  </Link>
-                  <br />
-                  <Link
-                    to="service"
-                    spy={true}
-                    smooth={true}
-                    duration={500}
-                    onClick={handleScroll}
-                    className="option"
-                  >
-                    SERVICE
                   </Link>
                   <br />
                   <Link

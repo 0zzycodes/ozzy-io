@@ -1,7 +1,6 @@
 import React from 'react';
 import Header from './components/header/header';
 import About from './sections/about/about';
-import Service from './sections/what we offer/service';
 import Portfolio from './sections/portfolio/portfolio';
 import './App.css';
 import Footer from './components/footer/footer';
@@ -22,9 +21,6 @@ const App = () => {
       <Header />
       <div id="about">
         <About />
-      </div>
-      <div id="service">
-        <Service />
       </div>
       <div id="work">
         <Portfolio />

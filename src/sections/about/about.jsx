@@ -15,11 +15,11 @@ const About = () => {
         <div className="about-text">
           <h3 className="section-title about-title spec">
             ABOUT ME
-            <span className="sort-description"></span>
+            <span className="sort-description" />
           </h3>
           <p>
             I'm a skilled and passionate self-taught Full-Stack Developer from
-            Nigeria. I have been fascinated with building a web application and
+            Nigeria. I have been fascinated with building web applications and
             solving problems using programming, my interest has led me to learn
             both font-end and backend technologies such as HTML5, CSS3,
             JavaScript, ReactJs and NodeJs. I have taken part in many different
@@ -43,7 +43,7 @@ const About = () => {
         <div className="flex-item">
           <div>
             <h3 className="about-title">Tech Stack</h3>
-            <p>Here are all the resources I used</p>
+            <p>Here are all the resources I've used</p>
             <div className="res">
               <h4>Frameworks & Libraries</h4>
               <ul>

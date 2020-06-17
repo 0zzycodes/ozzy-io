@@ -16,6 +16,7 @@ span,
 li,
 img {
   font-weight: 300;
+  font-family: 'Montserrat', sans-serif;
 }
 
 h1,
@@ -24,13 +25,11 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Montserrat', sans-serif;
   line-height: 1.5;
 }
 p {
   line-height: 1.6;
   font-weight: 400;
-  font-family: 'Montserrat', sans-serif;
   font-size: 15px;
   color: #adadad;
 }
