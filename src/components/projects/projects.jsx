@@ -2,6 +2,7 @@ import React from 'react';
 import { Consumer } from '../../context';
 import ProjectPreview from '../../components/project-preview/project-preview';
 import loader from '../../assets/loader.gif';
+import { PortfolioNav } from '../portfolio-nav/portfolio-nav';
 
 const Projects = () => {
   return (

@@ -1,7 +1,7 @@
-import React from "react";
-import { Link } from "react-scroll";
-import "./hero.scss";
-import CustomButton from "../custom-button/custom-button";
+import React from 'react';
+import { Link } from 'react-scroll';
+import './hero.scss';
+import CustomButton from '../custom-button/custom-button';
 const Hero = () => {
   return (
     <div className="hero container">

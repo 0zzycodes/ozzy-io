@@ -1,5 +1,5 @@
-import React from "react";
-import "./project-preview.scss";
+import React from 'react';
+import './project-preview.scss';
 const ProjectPreview = ({ data }) => {
   const { image, title, stack, demo, description } = data;
   return (
@@ -26,15 +26,15 @@ const ProjectPreview = ({ data }) => {
           <div className="p-stack">
             {stack
               ? stack
-                  .split(",")
+                  .split(',')
                   .map((item, index) => <span key={index}>{item}</span>)
-              : ""}
+              : ''}
           </div>
           <a href={demo} className="demo">
             Demo
           </a>
-          {data.code !== "" && (
-            <a href={data.code ? data.code : "/"} className="source">
+          {data.code !== '' && (
+            <a href={data.code ? data.code : '/'} className="source">
               Source
             </a>
           )}
