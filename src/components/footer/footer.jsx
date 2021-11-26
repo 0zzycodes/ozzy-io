@@ -1,11 +1,11 @@
-import React from 'react';
-import logo2 from '../../assets/logo2.png';
-import instagram from '../../assets/instagram.svg';
-import facebook from '../../assets/facebook.svg';
-import twitter from '../../assets/twitter.svg';
-import linkedin from '../../assets/linkedin.svg';
-import github from '../../assets/github.svg';
-import './footer.scss';
+import React from "react";
+import logo2 from "../../assets/white_logo.png";
+import instagram from "../../assets/instagram.svg";
+import facebook from "../../assets/facebook.svg";
+import twitter from "../../assets/twitter.svg";
+import linkedin from "../../assets/linkedin.svg";
+import github from "../../assets/github.svg";
+import "./footer.scss";
 const Footer = () => {
   return (
     <footer className="footer">
@@ -42,8 +42,8 @@ const Footer = () => {
       </div>
       <br />
       <p className="copyright">
-        {new Date().getFullYear()} &copy;{' '}
-        <a href="https://ozzy-dev.netlify.com">Ozzycodes</a>{' '}
+        {new Date().getFullYear()} &copy;{" "}
+        <a href="https://hybie.vercel.app">Hybie</a>
       </p>
     </footer>
   );
