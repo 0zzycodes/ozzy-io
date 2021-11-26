@@ -1,7 +1,7 @@
-import React from 'react';
-import { Link } from 'react-scroll';
-import './hero.scss';
-import CustomButton from '../custom-button/custom-button';
+import React from "react";
+import { Link } from "react-scroll";
+import "./hero.scss";
+import CustomButton from "../custom-button/custom-button";
 const Hero = () => {
   return (
     <div className="hero container">
@@ -32,7 +32,7 @@ const Hero = () => {
           </div>
           <h3 className="intro">
             Hi, I'm <span className="name">Ibrahim</span> <del>a.k.a</del>
-            <span className="name"> Ozzy</span>
+            <span className="name"> Hybie</span>
           </h3>
           <p>A Self-Taught Junior Full-Stack Developer. </p>
 

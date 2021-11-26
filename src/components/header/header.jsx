@@ -1,15 +1,15 @@
-import React, { useState } from 'react';
-import { Link } from 'react-scroll';
-import logo2 from '../../assets/logo2.png';
-import menu from '../../assets/menu.svg';
-import close from '../../assets/close.svg';
-import instagram from '../../assets/instagram.svg';
-import facebook from '../../assets/facebook.svg';
-import twitter from '../../assets/twitter.svg';
-import linkedin from '../../assets/linkedin.svg';
-import github from '../../assets/github.svg';
-import Hero from '../hero/hero';
-import './header.scss';
+import React, { useState } from "react";
+import { Link } from "react-scroll";
+import logo2 from "../../assets/white_logo.png";
+import menu from "../../assets/menu.svg";
+import close from "../../assets/close.svg";
+import instagram from "../../assets/instagram.svg";
+import facebook from "../../assets/facebook.svg";
+import twitter from "../../assets/twitter.svg";
+import linkedin from "../../assets/linkedin.svg";
+import github from "../../assets/github.svg";
+import Hero from "../hero/hero";
+import "./header.scss";
 
 const Header = () => {
   const [isShow, setisShow] = useState(false);
